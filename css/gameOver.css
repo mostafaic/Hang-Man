@@ -1,0 +1,33 @@
+@font-face{
+           font-family:Shirley;
+           src: url(fonts/Shirley.ttf);
+
+          }
+#sleep{
+    display:none;
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+    background:gray;
+    filter:alpha(Opacity=40%);
+    opacity:0.5;
+    -moz-opacity:0.5;
+    -khtml-opacity:0.5
+}
+#Gover{
+       display:none;
+       left:450px;
+       top:100px;
+       width:400px;
+       height:350px;
+       position:absolute;
+       z-index:100; 
+       background: #585858  ;
+       padding:2px;
+       border:1px solid black;  
+}
+.fonts{
+       font-family: Shirley; 
+}
