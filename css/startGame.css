@@ -1,0 +1,27 @@
+@font-face{
+	       font-family:Shirley;
+	       src: url(font/Shirley.ttf);
+
+          }
+h1{
+   font-family: Shirley; 
+   text-align:center;
+   font-size:50px;
+   text-decoration:underline;     
+}
+.cName{
+	 width:200px;
+	 height:40px; 
+	 line-height: 40px; 
+	 outline-style: double;
+}
+.cName::-webkit-input-placeholder { 
+	font-size: 12pt; 
+	color: blue;
+	text-align:center;
+	font-family: Shirley;}
+
+p{
+font-family: Shirley; 
+   text-align:center;	
+}
