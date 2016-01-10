@@ -1,5 +1,5 @@
-window.onload=function(){
-	function drawGame(){
+
+	function drawGame(namee,level,character){
 	//Div of Player Information
  var playerInfo = document.createElement('div');
  playerInfo.setAttribute('id','playerInfo');
@@ -7,32 +7,35 @@ window.onload=function(){
  playerInfo.style.border = '1px solid black';
  playerInfo.style.height = '10%';
  //--------------------------------------------------------------
- var characterPhoto = document.createElement('img');
- characterPhoto.style.marginLeft = "50px";
- 	characterPhoto.src = "playerObj.img";
- playerInfo.appendChild(characterPhoto);
-//---------------------------------------------------------------
- var playerName = document.createElement('label');
- playerName.textContent = "Hussien";
+  var playerName = document.createElement('label');
+ playerName.textContent = namee;
  playerName.style.fontSize = "40px";
- playerName.style.marginLeft = "100px";
+ playerName.style.marginLeft = "150px";
  playerInfo.appendChild(playerName);
 //---------------------------------------------------------------
-/*
  var playerLevel = document.createElement('label');
- playerLevel.textContent = "1";
+ playerLevel.textContent = level;
  playerLevel.style.fontSize = "40px";
  playerLevel.style.marginLeft = "50px";
  playerInfo.appendChild(playerLevel);
-  */
-  //---------------------------------------------------------------
+//---------------------------------------------------------------
+var characterPhoto = document.createElement('img');
+ characterPhoto.style.marginLeft = "50px";
+ if(character==0){
+ 	characterPhoto.src = "";
+ }else{
+ 	characterPhoto.src = "";
+ }
+ playerInfo.appendChild(characterPhoto);
+//---------------------------------------------------------------
 var scoreLabel = document.createElement('label');
  scoreLabel.textContent="Score : ";
  scoreLabel.style.fontSize = "40px";
  scoreLabel.style.marginLeft = "50px";
  playerInfo.appendChild(scoreLabel);
 var score = document.createElement('label');
- score.textContent="0";
+ score.setAttribute('id','score'); //ayad	
+ score.textContent="100";
  score.style.fontSize = "40px";
  playerInfo.appendChild(score);
 
@@ -43,6 +46,41 @@ var score = document.createElement('label');
  GameMap.style.border = '1px solid black';
  GameMap.style.height = '10%';
  GameMap.style.marginTop = '2px';
+
+ //design level stars and state 
+ var levelstate = document.createElement('img');
+ levelstate.setAttribute('src' , 'img/easy.png');
+ levelstate.setAttribute('id' , 'levelstate');
+ levelstate.style.marginLeft = '400px';
+ levelstate.style.height= '90%';
+ levelstate.style.width= '10%';
+
+ var level1 = document.createElement('img');
+ level1.setAttribute('src', 'img/active.JPG'); 
+ level1.setAttribute('id' , 'level1');
+ level1.style.marginLeft='70px';
+ level1.style.height= '90%';
+ level1.style.width= '10%';
+ 
+ var level2 = document.createElement('img');
+ level2.setAttribute('src', 'img/deactive.png');
+ level2.setAttribute('id', 'level2');
+ level2.style.height= '90%';
+ level2.style.width= '10%';
+ 
+ var level3 = document.createElement('img');
+ level3.setAttribute('src', 'img/deactive.png');
+ level3.setAttribute('id', 'level3');
+ level3.style.height= '90%';
+ level3.style.width= '10%';
+ 
+
+ 
+ GameMap.appendChild(levelstate);
+ GameMap.appendChild(level1);
+ GameMap.appendChild(level2);
+ GameMap.appendChild(level3);
+
  	// Div of the big container which inlude the div of all letters , the div of wrong letters and the div of hangman 
 var bigContainer = document.createElement('div');
  bigContainer.setAttribute('id','bigContainer');
@@ -73,41 +111,26 @@ var allLetters = document.createElement('div');
  var listOfWrongLetters = document.createElement('ul');
  listOfWrongLetters.setAttribute('id','listOfWrongLetters');
  wrongLetters.appendChild(listOfWrongLetters);
- 	// Div of hangman 
+ 	// Div of hangman which contains the div of guessed word
 var hangMan = document.createElement('div');
  hangMan.setAttribute('id','hangMan');
  bigContainer.appendChild(hangMan);
  hangMan.style.border = '1px solid black';
  hangMan.style.width = '50%';
- hangMan.style.height = '60%';
+ hangMan.style.height = '90%';
  hangMan.style.marginLeft = '335px';
  hangMan.style.marginTop = '40px';
- 	// Div of word which contains word description and guessed word
-var word = document.createElement('div');
- word.setAttribute('id','word');
- document.body.appendChild(word);
- word.style.border = '1px solid black';
- word.style.width = '40%';
- word.style.height = '25%';
- word.style.marginLeft = '400px';
- word.style.marginTop = '-165px';
- // Div of word description
- var wordDescription = document.createElement('div');
- wordDescription.setAttribute('id','wordDescription');
- word.appendChild(wordDescription);
- wordDescription.style.border = '1px solid black';
- wordDescription.style.width = '100%';
- wordDescription.style.height = '50%';
- // Div of guessed word
+ 	// Div of guessed word
 var guessedWord = document.createElement('div');
  guessedWord.setAttribute('id','guessedWord');
- word.appendChild(guessedWord);
+ hangMan.appendChild(guessedWord);
  guessedWord.style.border = '1px solid black';
- guessedWord.style.width = '100%';
- guessedWord.style.height = '48%';
-
+ guessedWord.style.width = '80%';
+ guessedWord.style.height = '10%';
+ guessedWord.style.marginLeft = '65px';
+ guessedWord.style.marginTop = '400px';
 /////////////////////////////////////////////////////////////////
-	getWord();
+	//getWord();
 }
-drawGame()
-}
+drawGame("Hussien Ashour","1")
+	
