@@ -12,6 +12,8 @@ var playerObj = {
 	}
 }
 var lvl1Words = [{'word':'','desc':'','hint':''}];
+var lvl2Words = [{'word':'','desc':'','hint':''}];
+var lvl3Words = [{'word':'','desc':'','hint':''}];
 var wordsPicked = [];
 var wordsCounter = 0;
 var guessedInARow = 0;
