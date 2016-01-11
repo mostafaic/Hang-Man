@@ -1,6 +1,13 @@
 function hangMe(index){
    
-    var canvas = document.getElementById('my-canvas');
+    // create canvas to draw on it 
+    var canvas = document.createElement('canvas');
+    canvas.setAttribute('width','100%');
+    canvas.setAttribute('height','100%');
+
+    var divC = document.getElementById('hangMan');
+    divC.appendChild(canvas); 
+ 
     var context = canvas.getContext('2d');
     context.fillStyle = "#000000";
 
