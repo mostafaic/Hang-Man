@@ -1,6 +1,12 @@
 function getWord(arrWords){
 
-	var word=document.getElementById('word');
+
+	var divId=document.getElementById('guessedWord');
+	
+	var word = document.createElement('table');
+	word.id='letters';
+	divId.appendChild(word);
+	
 	var row;
 	var data,data1;
 	var letter,description;
