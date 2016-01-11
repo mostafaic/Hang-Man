@@ -11,8 +11,7 @@
 			// score.innerHTML ='0';
 			wrongLetter.innerHTML ='';
 			levelUp(1);
-
-			
+			drawLetter();
 
 		}
 
@@ -20,6 +19,7 @@
 
 			wrongLetter.innerHTML ='';
 			levelUp(x);
+			drawLetter();			
 			
 
 		}
