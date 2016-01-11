@@ -1,21 +1,36 @@
-
 function getWord(arrWords){
 
-	var word=document.getElementById('word');
+
+	var divId=document.getElementById('guessedWord');
+	
+	var word = document.createElement('table');
+	word.id='letters';
+	divId.appendChild(word);
+	
 	var row;
 	var data,data1;
 	var letter,description;
 	
-	var level=0;
 	var wordCounter=0;
-	
+	var lvl1Words = [{'word':'Great','desc':'Extra Good','hint':''},{'word':'Clean','desc':'Tidy and dust free','hint':''},
+				{'word':'Milk','desc':'Dairy Drink','hint':''},{'word':'Head','desc':'Body Important Part','hint':''},
+				{'word':'Strange','desc':'Unrecognized and not clear','hint':''},{'word':'Palace','desc':'Big house','hint':''},
+				{'word':'Chew','desc':'One of the eating proccess','hint':''},{'word':'Mimic','desc':'to imitate someone','hint':''},
+				{'word':'Corn','desc':'Cinema favorite habit','hint':''},{'word':'Sponge','desc':'Used to clean things','hint':''},
+				{'word':'Tribe','desc':'A group of people','hint':''},{'word':'Fence','desc':'What surround propreties','hint':''},
+				{'word':'Shred','desc':'Cut into pieces','hint':''},{'word':'Dread','desc':'Horribaly bad','hint':''},
+				{'word':'Crumble','desc':'Fail apart','hint':''}];
+	var lvl2Words = [{'word':'','desc':'','hint':''}];
+	var lvl3Words = [{'word':'','desc':'','hint':''}];	
 	var prevWords=[15];
 	var randomIndex;
 
 	var min = 1;
-	var max = arrWords.length;
-		//draw the whole words of the array
 	
+		
+	if(playerObj.lvl==1){	
+		//draw the whole words of the array
+			var max = lvl1Words.length;
 			row=document.createElement('tr');
 			
 			randomIndex=Math.floor(Math.random()*(max-min)+min);
@@ -25,21 +40,15 @@ function getWord(arrWords){
 				if(randomIndex != prevWords[x]){
 					prevWords.push(randomIndex);
 					//display word
-					for(var i=0;i<arrWords[randomIndex].word.length;i++){
+					for(var i=0;i<lvl1Words[randomIndex].word.length;i++){
 						
+						data=document.createElement('td');
+						letter=document.createElement('p');
+						letter.innerHTML="__";
+		
+						data.appendChild(letter);
 						
-							data=document.createElement('td');
-							
-							
-							letter=document.createElement('p');
-							letter.innerHTML="__";
-							
-							
-							
-							data.appendChild(letter);
-							
-							
-							row.appendChild(data);
+						row.appendChild(data);
 					}
 			
 				/*	
@@ -59,7 +68,90 @@ function getWord(arrWords){
 				}
 			}
 					
-					//after each word will show him another word and add 1 to the wordCounter
+				
+					
+		//after 10 words call level-up	
+	}else if(playerObj.lvl==2){
+		//draw the whole words of the array
+			var max = lvl2Words.length;
+			row=document.createElement('tr');
+			
+			randomIndex=Math.floor(Math.random()*(max-min)+min);
+			
+			for(var x=0;x<prevWords.length;x++){
+				
+				if(randomIndex != prevWords[x]){
+					prevWords.push(randomIndex);
+					//display word
+					for(var i=0;i<lvl2Words[randomIndex].word.length;i++){
+						
+						data=document.createElement('td');
+						letter=document.createElement('p');
+						letter.innerHTML="__";
+		
+						data.appendChild(letter);
+						
+						row.appendChild(data);
+					}
+			
+				/*	
+					//to show the user the description of the word
+					data1=document.createElement('td');	
+					description=document.createElement('p');
+					
+					description.innerHTML=arrayObjectsL1[wordCounter].description;
+					data1.appendChild(description);
+					row.appendChild(data1);	
+				*/	
+			
+					word.appendChild(row);
+					
+				}else{
+					randomIndex=Math.floor(Math.random()*(max-min)+min);	
+				}
+			}
+					
+		//after 10 words call level-up	
+	}else(playerObj.lvl==2){
+		//draw the whole words of the array
+			var max = lvl3Words.length;
+			row=document.createElement('tr');
+			
+			randomIndex=Math.floor(Math.random()*(max-min)+min);
+			
+			for(var x=0;x<prevWords.length;x++){
+				
+				if(randomIndex != prevWords[x]){
+					prevWords.push(randomIndex);
+					//display word
+					for(var i=0;i<lvl3Words[randomIndex].word.length;i++){
+						
+						data=document.createElement('td');
+						letter=document.createElement('p');
+						letter.innerHTML="__";
+		
+						data.appendChild(letter);
+						
+						row.appendChild(data);
+					}
+			
+				/*	
+					//to show the user the description of the word
+					data1=document.createElement('td');	
+					description=document.createElement('p');
+					
+					description.innerHTML=arrayObjectsL1[wordCounter].description;
+					data1.appendChild(description);
+					row.appendChild(data1);	
+				*/	
+			
+					word.appendChild(row);
+					
+				}else{
+					randomIndex=Math.floor(Math.random()*(max-min)+min);	
+				}
+			}
 					
 		//after 10 words call level-up	
 	}
+}

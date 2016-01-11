@@ -1,7 +1,11 @@
 function drawLetters(){
 	
 	//table of letters
-	var letters=document.getElementById('letters');
+	//var letters=document.getElementById('letters');
+	var divId=document.getElementById('allLetters');
+	
+	var letters = document.createElement('table');
+	letters.id='letters';
 	
 	//variables to create row ,data and buttons of table
 	var row,data,letterButtons;
@@ -51,4 +55,6 @@ function drawLetters(){
 				this.style.display = 'none';
 				validateLetter(this.value);
 			}
+		
+			divId.appendChild(letters);
 }
