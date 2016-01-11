@@ -1,5 +1,5 @@
 
-function drawWord(){
+function getWord(arrWords){
 
 	var word=document.getElementById('word');
 	var row;
@@ -13,7 +13,7 @@ function drawWord(){
 	var randomIndex;
 
 	var min = 1;
-	var max = lvl1Words.length;
+	var max = arrWords.length;
 		//draw the whole words of the array
 	
 			row=document.createElement('tr');
@@ -25,7 +25,7 @@ function drawWord(){
 				if(randomIndex != prevWords[x]){
 					prevWords.push(randomIndex);
 					//display word
-					for(var i=0;i<lvl1Words[randomIndex].word.length;i++){
+					for(var i=0;i<arrWords[randomIndex].word.length;i++){
 						
 						
 							data=document.createElement('td');
