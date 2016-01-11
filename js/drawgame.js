@@ -1,6 +1,5 @@
-
-	function drawGame(){
-		document.innerHTML = '';
+function drawGame(){
+document.body.innerHTML = '';
 	//Div of Player Information
  var playerInfo = document.createElement('div');
  playerInfo.setAttribute('id','playerInfo');
@@ -22,7 +21,7 @@
 //---------------------------------------------------------------
 var characterPhoto = document.createElement('img');
  characterPhoto.style.marginLeft = "50px";
- if(character==0){
+ if(playerObj.gender==0){
  	characterPhoto.src = "";
  }else{
  	characterPhoto.src = "";
@@ -158,5 +157,4 @@ var guessedWord = document.createElement('div');
 /////////////////////////////////////////////////////////////////
 	//getWord();
 }
-drawGame()
 	

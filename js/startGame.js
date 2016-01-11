@@ -33,7 +33,7 @@ startGame.addEventListener('click',function check (e){
   		count=1;
   	}
               if(count != 1){
-                   drawgame();
+                   drawGame();
                }
     count=2; 
     return checking;
