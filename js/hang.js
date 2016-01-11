@@ -68,7 +68,7 @@ setInterval(function(){
 	 delPart(i);
 	 i++;
 	 console.log(i);
-},500);
+},1000);
 }//for the onload function
  
 

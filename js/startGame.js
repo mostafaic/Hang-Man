@@ -8,7 +8,7 @@ startGame.addEventListener('click',function check (e){
   	var checking = true;
   	var count;
 
-  	if (Nvalue == '')
+  	if (Name.value == '')
   	{
   		checking=false;
   		alert('Please Enter Your Valid Name :)');
