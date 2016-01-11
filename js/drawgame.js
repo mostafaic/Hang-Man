@@ -1,5 +1,6 @@
 
-	function drawGame(namee,level,character){
+	function drawGame(){
+		document.innerHTML = '';
 	//Div of Player Information
  var playerInfo = document.createElement('div');
  playerInfo.setAttribute('id','playerInfo');
@@ -8,13 +9,13 @@
  playerInfo.style.height = '10%';
  //--------------------------------------------------------------
   var playerName = document.createElement('label');
- playerName.textContent = namee;
+ playerName.textContent = playerObj.name;
  playerName.style.fontSize = "40px";
  playerName.style.marginLeft = "150px";
  playerInfo.appendChild(playerName);
 //---------------------------------------------------------------
  var playerLevel = document.createElement('label');
- playerLevel.textContent = level;
+ playerLevel.textContent = playerObj.lvl;
  playerLevel.style.fontSize = "40px";
  playerLevel.style.marginLeft = "50px";
  playerInfo.appendChild(playerLevel);
@@ -35,10 +36,35 @@ var scoreLabel = document.createElement('label');
  playerInfo.appendChild(scoreLabel);
 var score = document.createElement('label');
  score.setAttribute('id','score'); //ayad	
- score.textContent="100";
+ score.textContent=playerObj.score;
  score.style.fontSize = "40px";
  playerInfo.appendChild(score);
+//----------------------------------------------------------------
+var badges = document.createElement('span');
+ var image1 = document.createElement('img');
+ image1.setAttribute('id','1');
+ image1.setAttribute('src','sdsd.png');
+var image2 = document.createElement('img');
+ image2.setAttribute('id','2');
+ image2.setAttribute('src','adasd.png');
+ var image3 = document.createElement('img');
+ image3.setAttribute('id','3');
+ image3.setAttribute('src','wqeqwe.png');
+ var image4 = document.createElement('img');
+ image4.setAttribute('id','4');
+ image4.setAttribute('src','qwe.png');
+ var image5 = document.createElement('img');
+ image5.setAttribute('id','5');
+ image5.setAttribute('src','asdasd.png');
+ badges.style.marginLeft = "50px";
+ playerInfo.appendChild(badges);
+ badges.appendChild(image1);
+ badges.appendChild(image2);
+ badges.appendChild(image3);
+ badges.appendChild(image4);
+ badges.appendChild(image5); 
 
+//-------------------------------------------------------------------
  	//Div of Game Levels
  var GameMap = document.createElement('div');
  GameMap.setAttribute('id','GameMap');
@@ -132,5 +158,5 @@ var guessedWord = document.createElement('div');
 /////////////////////////////////////////////////////////////////
 	//getWord();
 }
-drawGame("Hussien Ashour","1")
+drawGame()
 	

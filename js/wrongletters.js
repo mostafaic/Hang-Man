@@ -11,9 +11,10 @@ if(wrongArray.length!=10){
 	li.textContent=letter;
 	list.appendChild(li);
 	wrongArray.push(letter);
+	delParts();
 	}
 if(wrongArray.length==10){
-	lost();
+	gameOver();
 		}	
 	}
 }
