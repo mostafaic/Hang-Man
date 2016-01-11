@@ -1,11 +1,9 @@
-window.onload=function(){
-
-var canvas = document.getElementById('my-canvas');
-var context = canvas.getContext('2d');
+function hangMe(index){
+   
+    var canvas = document.getElementById('my-canvas');
+    var context = canvas.getContext('2d');
     context.fillStyle = "#000000";
 
-/////////////////////////////////////////////////////////////////    
-function delPart(index){
     if(index ==1){
      context.fillRect(200,500,500,20); // rect 1
     }else if(index ==2){
@@ -63,12 +61,4 @@ function delPart(index){
     context.stroke();
   }
 }//function
-var i=1;
-setInterval(function(){
-	 delPart(i);
-	 i++;
-	 console.log(i);
-},500);
-}//for the onload function
- 
 
