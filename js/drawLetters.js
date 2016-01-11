@@ -27,6 +27,7 @@ window.onload=function(){
 			letterButtons.onclick=function(){
 				//validate the letter then pass it 
 				alert(this.value);
+				this.style.display = 'none'
 			}
 			
 			data.appendChild(letterButtons);
@@ -48,5 +49,6 @@ window.onload=function(){
 			letterButtons.onclick=function(){
 				//validate the letter then pass it 
 				alert(this.value);
+				this.style.display = 'none'
 			}
 }
