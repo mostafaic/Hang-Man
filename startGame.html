@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang=en>
-               <head> 
-               		<title>Hang Man</title>
-               		<link rel="stylesheet" type="text/css" href="css/startGame.css"> 
+    <head> 
+    	<title>Hang Man</title>
+   		<link rel="stylesheet" type="text/css" href="css/startGame.css"> 
 <!--                     <marquee> Welcome to Hang Man Games  </marquee>
- -->               </head>
+ -->
+      <script src="js/globalVariables.js"></script>
+      <script src="js/startGame.js"></script>
+     <!-- <script src="js/drawgame.js"></script>-->
+      <script src="js/drawLetters.js"></script>
+      <script src="js/getWord.js"></script>
+      <script src="js/validateLetterFunc.js"></script>
+      <script src="js/won.js"></script>
+      <script src="js/wrongletters.js"></script>
+      <script src="js/gameReset.js"></script>
+      <script src="js/levelUp.js"></script>
+      <!--<script src="js/hang.js"></script>-->
+      <script src="js/gameOver.js"></script>
+
+              </head>
 <body bgcolor="#00BFFF" align=center>
           			
           <img align=left height=400  src="img/sty2.png">
@@ -24,7 +38,7 @@
           	   		  width=200	 >
           	   			<tr>
           	   			<td rowspan="2"><input type="text" name="playerName" id="pName" placeholder="Type Your Name" class="cName">
-                       <button id='btn'><img src="img/start2.png" width=100 height=50></button>
+                       <button id='btn' ><img src="img/start2.png" width=100 height=50></button>
           	   					</td>
           	   			
           	   				<td width="90%" height="100">
@@ -45,9 +59,9 @@
           	   </table>
  				</div>
  				<p>&copy;Doers Team-ITI-OSAD-NoZha</p>
-            <audio autoplay loop><source src="audio/turkey.mp3">
-           </audio>
+           <!--  <audio autoplay loop><source src="audio/turkey.mp3">
+           </audio> -->
 
 </body>
-<script type="text/javascript" src="js/startGame.js"></script>
+
 </html>

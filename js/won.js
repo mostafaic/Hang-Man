@@ -1,7 +1,12 @@
 function won()
 {
-	playerObj.points = guessedInARow*10;
-	alert(playerObj.points);
-	/*drawBadges();
-	getWord();*/
+	playerObj.score = playerObj.guessedInARow*10;
+	if (wordsCounter == 10)
+	{
+		levelUp();
+		wordsCounter = 0;	
+	}
+	getWord();
+	//drawBadges();
+	
 }

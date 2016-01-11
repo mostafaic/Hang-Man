@@ -1,16 +1,11 @@
-var word = 'hazem';
 var wordTemp = [];
-var playerObj = {
-	'points':0
-};
-var guessedInARow = 0;
 function validateLetter(letter)
 {	
 	var isGuessedRight = false;
 	var index = 0;
-	while(isGuessedRight == false && index < word.length)
+	while(isGuessedRight == false && index < currentWord.length)
 	{
-		if (letter == word.charAt(index))
+		if (letter == currentWord.charAt(index))
 		{
 			isGuessedRight = true;
 		}
@@ -18,15 +13,15 @@ function validateLetter(letter)
 	}
 	if (isGuessedRight)
 	{
-		guessedInARow++;
+		playerObj.guessedInARow++;
 		putLetter(letter,index-1);
 	}
 	else
 	{
 		//wrongLetters(letter);
-		if (guessedInARow != 0)
+		if (playerObj.guessedInARow != 0)
 		{
-			guessedInARow--;
+			playerObj.guessedInARow--;
 		}
 	}
 	
@@ -36,7 +31,7 @@ function putLetter(letter,index)
 	wordTemp.push(letter);
 	var letterCell = document.getElementById(index);
 	letterCell.textContent = letter.toUpperCase();
-	if(wordTemp.length == word.length)
+	if(wordTemp.length == currentWord.length)
 	{
 		alert('Win');
 		won();
