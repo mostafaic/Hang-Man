@@ -24,8 +24,9 @@ function drawLetters(){
 			//onclick letter
 			letterButtons.onclick=function(){
 				//validate the letter then pass it 
-				alert(this.value);
-				this.style.display = 'none'
+				//alert(this.value);
+				this.style.display = 'none';
+				validateLetter(this.value);
 			}
 			
 			data.appendChild(letterButtons);
@@ -46,7 +47,8 @@ function drawLetters(){
 		//onclick letter
 			letterButtons.onclick=function(){
 				//validate the letter then pass it 
-				alert(this.value);
+				//alert(this.value);
 				this.style.display = 'none';
+				validateLetter(this.value);
 			}
 }
