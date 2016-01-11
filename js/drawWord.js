@@ -1,4 +1,5 @@
-window.onload=function(){
+
+function drawWord(){
 
 	var word=document.getElementById('word');
 	var row;
@@ -10,19 +11,11 @@ window.onload=function(){
 	
 	var prevWords=[15];
 	var randomIndex;
-	
-	//array objects for words and hints
-	var arrayObjectsL1=[{'word':'abssc','hint':'a','description':'it\'s a game'},
-						{'word':'asd','hint':'e','description':'it\'s a music}'},
-						{'word':'qwswwwe','hint':'r','description':'it\'s a shity thing'},
-						];
 
 	var min = 1;
-	var max = arrayObjectsL1.length;
+	var max = lvl1Words.length;
 		//draw the whole words of the array
 	
-			
-			
 			row=document.createElement('tr');
 			
 			randomIndex=Math.floor(Math.random()*(max-min)+min);
@@ -32,7 +25,7 @@ window.onload=function(){
 				if(randomIndex != prevWords[x]){
 					prevWords.push(randomIndex);
 					//display word
-					for(var i=0;i<arrayObjectsL1[randomIndex].word.length;i++){
+					for(var i=0;i<lvl1Words[randomIndex].word.length;i++){
 						
 						
 							data=document.createElement('td');
@@ -66,14 +59,7 @@ window.onload=function(){
 				}
 			}
 					
-						
-					
 					//after each word will show him another word and add 1 to the wordCounter
 					
-					
-					
-				
-			
-
 		//after 10 words call level-up	
-}
+	}
