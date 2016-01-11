@@ -1,4 +1,4 @@
-window.onload=function(){
+function drawLetters(){
 	
 	//table of letters
 	var letters=document.getElementById('letters');
@@ -10,8 +10,6 @@ window.onload=function(){
 	//array of letters
 	var alphabets = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 	var alphabetIndex=0;
-	
-	
 	
 	for(var rows=0;rows<5;rows++){
 		row=document.createElement('tr');
@@ -26,8 +24,9 @@ window.onload=function(){
 			//onclick letter
 			letterButtons.onclick=function(){
 				//validate the letter then pass it 
-				alert(this.value);
-				this.style.display = 'none'
+				//alert(this.value);
+				this.style.display = 'none';
+				validateLetter(this.value);
 			}
 			
 			data.appendChild(letterButtons);
@@ -48,7 +47,8 @@ window.onload=function(){
 		//onclick letter
 			letterButtons.onclick=function(){
 				//validate the letter then pass it 
-				alert(this.value);
-				this.style.display = 'none'
+				//alert(this.value);
+				this.style.display = 'none';
+				validateLetter(this.value);
 			}
 }
