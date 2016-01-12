@@ -4,7 +4,8 @@ function getWord(arrWords){
 	var divId=document.getElementById('guessedWord');
 	
 	var word = document.createElement('table');
-	word.id='letters';
+	
+	word.setAttribute('id','wordId');
 	divId.appendChild(word);
 	
 	var row;
@@ -112,7 +113,7 @@ function getWord(arrWords){
 			}
 					
 		//after 10 words call level-up	
-	}else(playerObj.lvl==2){
+	}else if(playerObj.lvl==2){
 		//draw the whole words of the array
 			var max = lvl3Words.length;
 			row=document.createElement('tr');
