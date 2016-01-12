@@ -7,15 +7,11 @@ function hangMe(index){
     console.log('shit');
     var canvas = document.createElement('canvas');
     canvas.setAttribute('id','canvas2');
-    canvas.setAttribute('width','100%');
-    canvas.setAttribute('height','100%');
-
+    canvas.setAttribute('width','500px');
+    canvas.setAttribute('height','500px');
     divC.appendChild(canvas); 
- 
     var context = canvas.getContext('2d');
-
     context.fillStyle = "#000000";
-
     context.fillRect(200,500,500,20); // rect 1
     }// for first check
     else{

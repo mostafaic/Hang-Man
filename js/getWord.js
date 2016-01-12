@@ -53,15 +53,15 @@ function getWord(arrWords){
 						row.appendChild(data);
 					}
 			
-				/*	
+					
 					//to show the user the description of the word
 					data1=document.createElement('td');	
 					description=document.createElement('p');
 					
-					description.innerHTML=arrayObjectsL1[wordCounter].description;
+					description.innerHTML=arrayObjectsL1[wordCounter].desc;
 					data1.appendChild(description);
 					row.appendChild(data1);	
-				*/	
+					
 			
 					word.appendChild(row);
 					
@@ -97,15 +97,13 @@ function getWord(arrWords){
 						row.appendChild(data);
 					}
 			
-				/*	
-					//to show the user the description of the word
+				//to show the user the description of the word
 					data1=document.createElement('td');	
 					description=document.createElement('p');
 					
-					description.innerHTML=arrayObjectsL1[wordCounter].description;
+					description.innerHTML=arrayObjectsL1[wordCounter].desc;
 					data1.appendChild(description);
 					row.appendChild(data1);	
-				*/	
 			
 					word.appendChild(row);
 					
@@ -139,15 +137,13 @@ function getWord(arrWords){
 						row.appendChild(data);
 					}
 			
-				/*	
-					//to show the user the description of the word
+				//to show the user the description of the word
 					data1=document.createElement('td');	
 					description=document.createElement('p');
 					
-					description.innerHTML=arrayObjectsL1[wordCounter].description;
+					description.innerHTML=arrayObjectsL1[wordCounter].desc;
 					data1.appendChild(description);
-					row.appendChild(data1);	
-				*/	
+					row.appendChild(data1);		
 			
 					word.appendChild(row);
 					
