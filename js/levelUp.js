@@ -7,7 +7,6 @@ function levelUp(level){
         
         if ( level === 1 )
         {
-            
             level1.setAttribute('src','img/active.JPG');
             level2.setAttribute('src','img/deactive.png');
             level3.setAttribute('src','img/deactive.png');
@@ -27,9 +26,9 @@ function levelUp(level){
         {
            
              level1.setAttribute('src','img/deactive.png');
-            level2.setAttribute('src','img/deactive.png');
-            level3.setAttribute('src','img/active.JPG');
-            state.setAttribute('src','img/hard.png');
+             level2.setAttribute('src','img/deactive.png');
+             level3.setAttribute('src','img/active.JPG');
+             state.setAttribute('src','img/hard.png');
         }
 }
 
