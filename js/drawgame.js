@@ -111,7 +111,7 @@ var bigContainer = document.createElement('div');
  bigContainer.setAttribute('id','bigContainer');
  document.body.appendChild(bigContainer);
  bigContainer.style.border = '1px solid black';
- bigContainer.style.height = '80%';
+ bigContainer.style.height = '600px';
  bigContainer.style.marginTop = '2px';
  	// Div of all letters
 var allLetters = document.createElement('div');
@@ -150,10 +150,10 @@ var guessedWord = document.createElement('div');
  guessedWord.setAttribute('id','guessedWord');
  document.body.appendChild(guessedWord);
  guessedWord.style.border = '1px solid black';
- guessedWord.style.width = '80%';
+ guessedWord.style.width = '30%';
  guessedWord.style.height = '10%';
- guessedWord.style.marginLeft = '65px';
- guessedWord.style.marginTop = '400px';
+ guessedWord.style.marginLeft = '450px';
+ guessedWord.style.marginTop = '2px';
 /////////////////////////////////////////////////////////////////
 	//call drawLetters and getWord functions ***By Sobhy***////
 	drawLetters();
