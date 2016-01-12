@@ -11,7 +11,7 @@ function getWord(arrWords){
 	var row;
 	var data,data1;
 	var letter,description;
-	var letterIndex=0;
+	var letterIndex=30;
 	var wordCounter=0;
 	var lvl1Words = [{'word':'Great','desc':'Extra Good','hint':''},{'word':'Clean','desc':'Tidy and dust free','hint':''},
 				{'word':'Milk','desc':'Dairy Drink','hint':''},{'word':'Head','desc':'Body Important Part','hint':''},
