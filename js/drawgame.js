@@ -148,7 +148,7 @@ var hangMan = document.createElement('div');
  	// Div of guessed word
 var guessedWord = document.createElement('div');
  guessedWord.setAttribute('id','guessedWord');
- hangMan.appendChild(guessedWord);
+ document.body.appendChild(guessedWord);
  guessedWord.style.border = '1px solid black';
  guessedWord.style.width = '80%';
  guessedWord.style.height = '10%';
