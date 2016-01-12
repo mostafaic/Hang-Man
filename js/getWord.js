@@ -39,6 +39,7 @@ function getWord(arrWords){
 			for(var x=0;x<prevWords.length;x++){
 				
 				if(randomIndex != prevWords[x]){
+					currentWord=lvl1Words[randomIndex].word;
 					prevWords.push(randomIndex);
 					//display word
 					for(var i=0;i<lvl1Words[randomIndex].word.length;i++){
@@ -82,6 +83,7 @@ function getWord(arrWords){
 			for(var x=0;x<prevWords.length;x++){
 				
 				if(randomIndex != prevWords[x]){
+					currentWord=lvl1Words[randomIndex].word;
 					prevWords.push(randomIndex);
 					//display word
 					for(var i=0;i<lvl2Words[randomIndex].word.length;i++){
@@ -123,6 +125,7 @@ function getWord(arrWords){
 			for(var x=0;x<prevWords.length;x++){
 				
 				if(randomIndex != prevWords[x]){
+					currentWord=lvl1Words[randomIndex].word;
 					prevWords.push(randomIndex);
 					//display word
 					for(var i=0;i<lvl3Words[randomIndex].word.length;i++){
