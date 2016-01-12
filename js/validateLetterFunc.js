@@ -3,6 +3,7 @@ function validateLetter(letter)
 {	
 	var isGuessedRight = false;
 	var index = 0;
+	var ids = 30;
 	while(isGuessedRight == false && index < currentWord.length)
 	{
 		if (letter == currentWord.charAt(index))
@@ -14,11 +15,11 @@ function validateLetter(letter)
 	if (isGuessedRight)
 	{
 		playerObj.guessedInARow++;
-		putLetter(letter,index-1);
+		putLetter(letter,ids+(index-1));
 	}
 	else
 	{
-		//wrongLetters(letter);
+		wrongLetter(letter);
 		if (playerObj.guessedInARow != 0)
 		{
 			playerObj.guessedInARow--;
