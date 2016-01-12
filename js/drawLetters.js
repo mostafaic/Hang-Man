@@ -1,11 +1,10 @@
 function drawLetters(){
 	
-	//table of letters
-	//var letters=document.getElementById('letters');
 	var divId=document.getElementById('allLetters');
 	
 	var letters = document.createElement('table');
-	letters.id='letters';
+	letters.setAttribute('id','letters');
+	
 	
 	//variables to create row ,data and buttons of table
 	var row,data,letterButtons;
