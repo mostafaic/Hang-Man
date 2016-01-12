@@ -1,6 +1,6 @@
 	function gameReset(mode)
     {
-    	var x;  // el global variable bta3t el level
+    	//var x;  // el global variable bta3t el level
     	// var score = document.getElementById('score');
 		var wrongLetter = document.getElementById('listOfWrongLetters');
 
@@ -12,15 +12,16 @@
 			wrongLetter.innerHTML ='';
 			levelUp(1);
 			drawLetter();
+			getWord();
 
 		}
 
 		if (mode == 1){   //turn to new level
 
 			wrongLetter.innerHTML ='';
-			levelUp(x);
+			levelUp(playerObj.lvl);
 			drawLetter();			
-			
+			getWord();	
 
 		}
 	}	
