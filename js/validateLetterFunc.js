@@ -2,22 +2,19 @@ var wordTemp = [];
 function validateLetter(letter)
 {	
 	var isGuessedRight = false;
-	var index = 0;
+	var index;
 	var ids = 30;
-	while(isGuessedRight == false && index < currentWord.length)
+	for(var i = 0;i<currentWord.length;i++)
 	{
-		if (letter == currentWord.charAt(index))
+		if (letter == currentWord.charAt(i))
 		{
 			isGuessedRight = true;
+			playerObj.guessedInARow++;
+			putLetter(letter,ids+(i));
 		}
-		index++;
 	}
-	if (isGuessedRight)
-	{
-		playerObj.guessedInARow++;
-		putLetter(letter,ids+(index-1));
-	}
-	else
+
+	if (!isGuessedRight)
 	{
 		wrongLetter(letter);
 		if (playerObj.guessedInARow != 0)

@@ -9,6 +9,7 @@ function won()
 	}
 	else
 	{	
+		wordsCounter++;
 		gameReset(1);
 	}
 	
