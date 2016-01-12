@@ -13,6 +13,7 @@
 			wrongLetter.innerHTML ='';
 			guessWord.innerHTML='';
 			letters.innerHTML='';
+			wrongArray = [];
 			levelUp(1);
 			drawLetters();
 			getWord();
@@ -25,6 +26,7 @@
 			guessWord.innerHTML='';
 			letters.innerHTML= '';
 			hangman.innerHTML='';
+			wrongArray = [];
 			//word.innerHTML='';
 			drawLetters();			
 			getWord();
@@ -38,6 +40,7 @@
 			guessWord.innerHTML='';
 			letters.innerHTML= '';
 			hangman.innerHTML='';
+			wrongArray = [];
 			levelUp(playerObj.lvl);
 			drawLetters();
 			getWord();
