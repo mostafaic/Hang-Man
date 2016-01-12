@@ -36,5 +36,6 @@ function putLetter(letter,index)
 	{
 		alert('Win');
 		won();
+		wordTemp  = [];
 	}
 }

@@ -22,7 +22,7 @@
 			wrongLetter.innerHTML ='';
 			guessWord.innerHTML='';
 			letters.innerHTML= '';
-			word.innerHTML='';
+			//word.innerHTML='';
 			drawLetters();			
 			getWord();
 				
