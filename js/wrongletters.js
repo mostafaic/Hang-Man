@@ -7,6 +7,8 @@ divOfWrongLetter.appendChild(list);
 var li = document.createElement('li');
 	li.textContent=letter;
 	list.appendChild(li);
+	wrongArray.push(letter);
+	hangMe(wrongArray.length);
 }else{
 var list = document.getElementById('list');
 if(wrongArray.length!=10){
@@ -15,6 +17,8 @@ if(wrongArray.length!=10){
 	list.appendChild(li);
 	wrongArray.push(letter);
 	hangMe(wrongArray.length);
+		console.log(wrongArray.length);
+
 	}
 if(wrongArray.length==10){
 	gameOver();
