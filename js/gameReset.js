@@ -11,7 +11,6 @@
 			guessWord.innerHTML='';
 			levelUp(1);
 			drawLetters();
-			
 			getWord();
 
 		}
