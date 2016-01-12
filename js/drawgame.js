@@ -155,6 +155,6 @@ var guessedWord = document.createElement('div');
  guessedWord.style.marginLeft = '65px';
  guessedWord.style.marginTop = '400px';
 /////////////////////////////////////////////////////////////////
-	//getWord();
+	getWord();
 }
 	
