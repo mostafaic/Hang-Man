@@ -1,6 +1,6 @@
 	function gameReset(mode)
     {
-    	var wrongLetter = document.getElementById('listOfWrongLetters');
+    	var wrongLetter = document.getElementById('wrongLetters');
 	var guessWord = document.getElementById('guessedWord');
 
 		if (mode == 0){    //game over mode  

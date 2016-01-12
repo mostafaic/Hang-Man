@@ -5,9 +5,14 @@ function won()
 	{
 		playerObj.lvl++;
 		wordsCounter = 0;	
-		gameReset(1);
+		gameReset(2);
 	}
-	getWord();
+	else
+	{	
+		gameReset(1);
+		getWord();	
+	}
+	
 	//drawBadges();
 	
 }
