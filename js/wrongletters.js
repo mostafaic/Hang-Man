@@ -14,7 +14,7 @@ if(wrongArray.length!=10){
 	li.textContent=letter;
 	list.appendChild(li);
 	wrongArray.push(letter);
-	delParts(wrongArray.length);
+	hangMe(wrongArray.length);
 	}
 if(wrongArray.length==10){
 	gameOver();
