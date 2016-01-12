@@ -1,9 +1,9 @@
-@font-face{
+/*@font-face{
            font-family:Shirley;
            src: url(fonts/Shirley.ttf);
 
           }
-#sleep{
+*//*body{
     display:none;
     position:absolute;
     left:0px;
@@ -15,8 +15,8 @@
     opacity:0.5;
     -moz-opacity:0.5;
     -khtml-opacity:0.5
-}
-#Gover{
+}*/
+#gOver{
        display:none;
        left:450px;
        top:100px;
@@ -28,6 +28,7 @@
        padding:2px;
        border:1px solid black;  
 }
-.fonts{
+/*.fonts{
        font-family: Shirley; 
 }
+*/
