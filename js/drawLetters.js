@@ -1,7 +1,9 @@
 function drawLetters(){
 	
+	//container that contain the table of letters
 	var divId=document.getElementById('allLetters');
 	
+	//table of letters 
 	var letters = document.createElement('table');
 	letters.setAttribute('id','letters');
 	
@@ -14,6 +16,8 @@ function drawLetters(){
 	var alphabets = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 	var alphabetIndex=0;
 	
+	
+	//append letters to the table //////////////////////////////////////////
 	for(var rows=0;rows<5;rows++){
 		row=document.createElement('tr');
 		letters.appendChild(row);
@@ -27,7 +31,6 @@ function drawLetters(){
 			//onclick letter
 			letterButtons.onclick=function(){
 				//validate the letter then pass it 
-				//alert(this.value);
 				this.style.display = 'none';
 				validateLetter(this.value);
 			}
