@@ -3,7 +3,9 @@
     var wrongLetter =   document.getElementById('wrongLetters');
 	var guessWord   =   document.getElementById('guessedWord');
 	var letters     =   document.getElementById('allLetters');
-	var word =  document.getElementById('wordId');
+	var word 		=   document.getElementById('wordId');
+	var hangman 	=   document.getElementById('hangMan');
+		
 		if (mode == 0){    //game over mode  
 			
 
@@ -22,6 +24,7 @@
 			wrongLetter.innerHTML ='';
 			guessWord.innerHTML='';
 			letters.innerHTML= '';
+			hangman.innerHTML='';
 			//word.innerHTML='';
 			drawLetters();			
 			getWord();
@@ -33,8 +36,9 @@
  
 			wrongLetter,innerHTML='';
 			guessWord.innerHTML='';
-			levelUp(playerObj.lvl);
 			letters.innerHTML= '';
+			hangman.innerHTML='';
+			levelUp(playerObj.lvl);
 			drawLetters();
 			getWord();
 		} 
