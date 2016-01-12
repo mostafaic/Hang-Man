@@ -133,9 +133,9 @@ var allLetters = document.createElement('div');
  wrongLetters.style.marginLeft = '10px';
  wrongLetters.style.marginTop = '40px';
  wrongLetters.style.float = 'left';
- var listOfWrongLetters = document.createElement('ul');
- listOfWrongLetters.setAttribute('id','listOfWrongLetters');
- wrongLetters.appendChild(listOfWrongLetters);
+ //var listOfWrongLetters = document.createElement('ul');
+ //listOfWrongLetters.setAttribute('id','listOfWrongLetters');
+ //wrongLetters.appendChild(listOfWrongLetters);
  	// Div of hangman which contains the div of guessed word
 var hangMan = document.createElement('div');
  hangMan.setAttribute('id','hangMan');

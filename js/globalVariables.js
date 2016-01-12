@@ -25,4 +25,4 @@ var lvl3Words = [{'word':'','desc':'','hint':''}];*/
 var wordsPicked = [];
 var wordsCounter = 0;
 var wrongArray=[];
-var currentWord = "Word";
+var currentWord ;
