@@ -1,3 +1,5 @@
+//function drawLetters that draw all alphabets on the screen and disapear after click then validate this letter //////////
+//author A.sobhy**1-2016**Doers Team**ITI Intake 36 Nozha Branch////////////////////////////
 function drawLetters(){
 	
 	//container that contain the table of letters
