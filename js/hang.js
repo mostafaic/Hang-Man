@@ -1,19 +1,24 @@
 function hangMe(index){
    
     // create canvas to draw on it 
+    var divC = document.getElementById('hangMan');
+
+    if(divC.innerHTML == ''){
+
     var canvas = document.createElement('canvas');
     canvas.setAttribute('width','100%');
     canvas.setAttribute('height','100%');
 
-    var divC = document.getElementById('hangMan');
     divC.appendChild(canvas); 
  
     var context = canvas.getContext('2d');
     context.fillStyle = "#000000";
 
-    if(index ==1){
-     context.fillRect(200,500,500,20); // rect 1
-    }else if(index ==2){
+    context.fillRect(200,500,500,20); // rect 1
+    }// for first check
+    else{
+
+    if(index ==2){
      context.fillRect(250,80,20,420);  // rect 2
     }else if(index ==3){
      context.fillRect(250,80,220,20);  // rect 3 
@@ -68,4 +73,4 @@ function hangMe(index){
     context.stroke();
   }
 }//function
-
+}// for big else
