@@ -10,7 +10,6 @@ function won()
 	else
 	{	
 		gameReset(1);
-		getWord();	
 	}
 	
 	//drawBadges();
