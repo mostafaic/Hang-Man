@@ -22,7 +22,7 @@ function drawLetters(){
 			letterButtons=document.createElement('button');
 			letterButtons.value=alphabets[alphabetIndex];
 			letterButtons.innerHTML=alphabets[alphabetIndex];
-			letterButtons.id="letter"+(alphabetIndex++);
+			letterButtons.id=("letter"+(alphabetIndex++));
 			
 			//onclick letter
 			letterButtons.onclick=function(){
@@ -44,7 +44,7 @@ function drawLetters(){
 		letterButtons=document.createElement('button');
 		letterButtons.value=alphabets[alphabetIndex];
 		letterButtons.innerHTML=alphabets[alphabetIndex];
-		letterButtons.id="letter"+(alphabetIndex);
+		letterButtons.id=("letter"+(alphabetIndex));
 		data.appendChild(letterButtons);
 		row.appendChild(data);
 	
