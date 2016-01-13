@@ -23,8 +23,11 @@ function getWord(){
 				{'word':'shred','desc':'Cut into pieces','hint':''},{'word':'dread','desc':'Horribaly bad','hint':''},
 				{'word':'crumble','desc':'Fail apart','hint':''}];
 	
-	var lvl2Words = [{'word':'','desc':'','hint':''}];
-	var lvl3Words = [{'word':'','desc':'','hint':''}];	
+	var lvl2Words = [{'word':'corn','desc':'Cinema favorite habit','hint':''},{'word':'sponge','desc':'Used to clean things','hint':''},
+				{'word':'tribe','desc':'A group of people','hint':''},{'word':'fence','desc':'What surround propreties','hint':''},
+				{'word':'shred','desc':'Cut into pieces','hint':''}];
+	var lvl3Words = [{'word':'strange','desc':'Unrecognized and not clear','hint':''},{'word':'palace','desc':'Big house','hint':''},
+				{'word':'chew','desc':'One of the eating proccess','hint':''}];	
 	
 	var randomIndex;
 
