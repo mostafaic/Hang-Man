@@ -1,5 +1,3 @@
-	   
-
 function levelUp(level){
     var level1 = document.getElementById('level1');
     var level2 = document.getElementById('level2');
