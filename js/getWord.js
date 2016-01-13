@@ -49,6 +49,7 @@ function getWord(){
 								letter.innerHTML="__";
 								data.appendChild(letter);		
 								row.appendChild(data);
+								currentWord=lvl1Words.word;
 						}else{
 						}
 					
@@ -69,6 +70,7 @@ function getWord(){
 								letter.innerHTML="__";
 								data.appendChild(letter);		
 								row.appendChild(data);
+								currentWord=lvl2Words.word;
 						}else{
 						}
 					
@@ -90,6 +92,7 @@ else if(playerObj.lvl==3){
 								letter.innerHTML="__";
 								data.appendChild(letter);		
 								row.appendChild(data);
+								currentWord=lvl3Words.word;
 						}else{
 						}
 					
