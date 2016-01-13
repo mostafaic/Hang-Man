@@ -86,7 +86,7 @@ function getWord(){
 								}
 								data1=document.createElement('td');
 								description=document.createElement('p');
-								description.innerHTML=lvl1Words[randomIndex].desc;
+								description.innerHTML=lvl2Words[randomIndex].desc;
 								data1.appendChild(description);
 								row.appendChild(data1);
 								
@@ -117,7 +117,7 @@ function getWord(){
 								}
 								data1=document.createElement('td');
 								description=document.createElement('p');
-								description.innerHTML=lvl1Words[randomIndex].desc;
+								description.innerHTML=lvl2Words[randomIndex].desc;
 								data1.appendChild(description);
 								row.appendChild(data1);
 								
@@ -153,7 +153,7 @@ else if(playerObj.lvl==3){
 								}
 								data1=document.createElement('td');
 								description=document.createElement('p');
-								description.innerHTML=lvl2Words[randomIndex].desc;
+								description.innerHTML=lvl3Words[randomIndex].desc;
 								data1.appendChild(description);
 								row.appendChild(data1);
 								
