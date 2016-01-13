@@ -1,7 +1,6 @@
-
 //function getWord that get new word from array and display it as dashes/////////////////////
 //author A.sobhy**1-2016**Doers Team**ITI Intake 36 Nozha Branch////////////////////////////
-function getWord(arrWords){
+function getWord(){
 
 //container of the word 
 	var divId=document.getElementById('guessedWord');
