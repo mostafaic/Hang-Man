@@ -26,3 +26,5 @@ var wordsPicked = [];
 var wordsCounter = 0;
 var wrongArray=[];
 var currentWord ;
+//global array to save the previous words indices 
+var prevWords=[];
