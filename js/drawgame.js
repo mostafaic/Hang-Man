@@ -24,9 +24,9 @@ document.body.innerHTML = '';
 var characterPhoto = document.createElement('img');
  characterPhoto.style.marginLeft = "50px";
  if(playerObj.gender==0){
- 	characterPhoto.src = "";
+ 	characterPhoto.src = "img/New images/female.png";
  }else{
- 	characterPhoto.src = "";
+ 	characterPhoto.src = "img/New images/male.png";
  }
  playerInfo.appendChild(characterPhoto);
 //---------------------------------------------------------------
@@ -43,20 +43,25 @@ var score = document.createElement('label');
 //----------------------------------------------------------------
 var badges = document.createElement('span');
  var image1 = document.createElement('img');
+ image1.style.height="100px";
  image1.setAttribute('id',"img1");
- image1.setAttribute('src','sdsd.png');
+ image1.setAttribute('src','img/New images/lev 1 1.png');
 var image2 = document.createElement('img');
+image2.style.height="100px";
  image2.setAttribute('id',"img2");
- image2.setAttribute('src','adasd.png');
+ image2.setAttribute('src','img/New images/lev 2 2.png');
  var image3 = document.createElement('img');
+ image3.style.height="100px";
  image3.setAttribute('id',"img3");
- image3.setAttribute('src','wqeqwe.png');
+ image3.setAttribute('src','img/New images/lev 3 3.png');
  var image4 = document.createElement('img');
+ image4.style.height="100px";
  image4.setAttribute('id',"img4");
- image4.setAttribute('src','qwe.png');
+ image4.setAttribute('src','img/New images/1st guess 2.png');
  var image5 = document.createElement('img');
+ image5.style.height="100px";
  image5.setAttribute('id',"img5");
- image5.setAttribute('src','asdasd.png');
+ image5.setAttribute('src','img/New images/No Hint 2.png');
  badges.style.marginLeft = "50px";
  playerInfo.appendChild(badges);
  badges.appendChild(image1);
@@ -67,11 +72,12 @@ var image2 = document.createElement('img');
 
 //-------------------------------------------------------------------
  	//Div of Game Levels
+ 	
  var GameMap = document.createElement('div');
  GameMap.setAttribute('id','GameMap');
  document.body.appendChild(GameMap);
- GameMap.style.border = '1px solid black';
- GameMap.style.height = '10%';
+ //GameMap.style.border = '1px solid black';
+ GameMap.style.height = '5%';
  GameMap.style.marginTop = '2px';
 
  //design level stars and state 
@@ -154,8 +160,8 @@ var guessedWord = document.createElement('div');
  //guessedWord.style.border = '1px solid black';
  guessedWord.style.width = '30%';
  guessedWord.style.height = '10%';
- guessedWord.style.marginLeft = '450px';
- guessedWord.style.marginTop = '2px';
+ guessedWord.style.marginLeft = '600px';
+ guessedWord.style.marginTop = '-10px';
 /////////////////////////////////////////////////////////////////
 	//call drawLetters and getWord functions ***By Sobhy***////
 	drawLetters();

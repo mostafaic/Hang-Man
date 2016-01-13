@@ -7,8 +7,8 @@ function hangMe(index){
     console.log('shit');
     var canvas = document.createElement('canvas');
     canvas.setAttribute('id','canvas2');
-    canvas.setAttribute('width','800px');
-    canvas.setAttribute('height','800px');
+    canvas.setAttribute('width','600px');
+    canvas.setAttribute('height','600px');
     divC.appendChild(canvas); 
     var context = canvas.getContext('2d');
     context.fillStyle = "#000000";
