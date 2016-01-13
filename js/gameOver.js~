@@ -43,11 +43,14 @@ function restartGame()
     
     content.appendChild(image);
 
+<<<<<<< HEAD
     var button = document.createElement('button');
     //button.setAttribute('type','button');
     button.textContent="Restart you Game";
     button.addEventListener('click',function(){
         document.location = 'startGame.html';
     });
-    content.appendChild(button);        
+    content.appendChild(button);    
+=======
+    
 }
