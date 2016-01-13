@@ -21,11 +21,15 @@ showpopup()
 }// for the whole
 *///*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/**/*/**/*/*/*/*/*
 function gameOver(){
-	document.body.innerHTML='';
-	var content = document.createElement('div');
+	document.location = 'index.html';
+    restartGame();
+}
+function restartGame()
+{
+    var content = document.createElement('div');
     content.setAttribute('id','gOver');
     document.body.appendChild(content);
-
+    console.log(document.body);
     var score = document.createElement('font');
     score.setAttribute('id','sc');
     score.textContent="your score is: "+ playerObj.score;
@@ -39,12 +43,11 @@ function gameOver(){
     
     content.appendChild(image);
 
-    var buton = document.createElement('input');
-    buton.setAttribute('type','button');
-    buton.setAttribute('onclick',function(){
-    	window.location='../startGame.html';	
+    var button = document.createElement('button');
+    //button.setAttribute('type','button');
+    button.textContent="Restart you Game";
+    button.addEventListener('click',function(){
+        document.location = 'startGame.html';
     });
-    buton.textContent="Restart you Game";
-    content.appendChild(buton);
-
+    content.appendChild(button);    
 }
