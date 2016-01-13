@@ -42,9 +42,9 @@ function gameOver(){
     var buton = document.createElement('input');
     buton.setAttribute('type','button');
     buton.setAttribute('onclick',function(){
-    	window.location='../startGame.html';	
+    	window.location=sss../startGame.html;	
     });
-    buton.textContent="Restart you Game";
+    buton.value="Restart you Game";
     content.appendChild(buton);
 
 }

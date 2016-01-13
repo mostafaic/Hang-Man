@@ -15,7 +15,7 @@ function hangMe(index){
     context.fillRect(200,500,500,20); // rect 1
     }// for first check
     else{
-        console.log("Test");
+    console.log("Test");
     var canvas = document.getElementById('canvas2'); 
     var context = canvas.getContext('2d');
     context.fillStyle = "#000000";
