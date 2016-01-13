@@ -52,7 +52,7 @@ function getWord(){
 								}
 								data1=document.createElement('td');
 								description=document.createElement('p');
-								description.innerHTML=arrayObjectsL1[randomIndex].desc;
+								description.innerHTML=lvl1Words[randomIndex].desc;
 								data1.appendChild(description);
 								row.appendChild(data1);
 								
@@ -75,7 +75,7 @@ function getWord(){
 						if(prevWords.indexOf(randomIndex)==-1){
 								found=1;
 								prevWords.push(randomIndex);
-								currentWord=lvl1Words[randomIndex].word;
+								currentWord=lvl2Words[randomIndex].word;
 								for (var i = 0; i < currentWord.length; i++) {
 									data=document.createElement('td');
 									letter=document.createElement('p');
@@ -86,7 +86,7 @@ function getWord(){
 								}
 								data1=document.createElement('td');
 								description=document.createElement('p');
-								description.innerHTML=arrayObjectsL1[randomIndex].desc;
+								description.innerHTML=lvl1Words[randomIndex].desc;
 								data1.appendChild(description);
 								row.appendChild(data1);
 								
@@ -96,7 +96,38 @@ function getWord(){
 						}
 					
 				}while(found!=1)
-				
+
+		}else{
+			var max = lvl2Words.length;
+					row=document.createElement('tr');
+				do{
+						randomIndex=Math.floor(Math.random()*(max-min)+min);
+						
+						if(prevWords.indexOf(randomIndex)==-1){
+								found=1;
+								prevWords.push(randomIndex);
+								currentWord=lvl2Words[randomIndex].word;
+								for (var i = 0; i < currentWord.length; i++) {
+									data=document.createElement('td');
+									letter=document.createElement('p');
+									letter.innerHTML="__";
+									letter.id = letterIndex+i;
+									data.appendChild(letter);		
+									row.appendChild(data);	
+								}
+								data1=document.createElement('td');
+								description=document.createElement('p');
+								description.innerHTML=lvl1Words[randomIndex].desc;
+								data1.appendChild(description);
+								row.appendChild(data1);
+								
+								word.appendChild(row);
+								divId.appendChild(word);	
+						}else{
+						}
+					
+				}while(found!=1)
+		}					
 }
 
 else if(playerObj.lvl==3){
@@ -111,7 +142,7 @@ else if(playerObj.lvl==3){
 						if(prevWords.indexOf(randomIndex)==-1){
 								found=1;
 								prevWords.push(randomIndex);
-								currentWord=lvl1Words[randomIndex].word;
+								currentWord=lvl3Words[randomIndex].word;
 								for (var i = 0; i < currentWord.length; i++) {
 									data=document.createElement('td');
 									letter=document.createElement('p');
@@ -122,7 +153,7 @@ else if(playerObj.lvl==3){
 								}
 								data1=document.createElement('td');
 								description=document.createElement('p');
-								description.innerHTML=arrayObjectsL1[randomIndex].desc;
+								description.innerHTML=lvl2Words[randomIndex].desc;
 								data1.appendChild(description);
 								row.appendChild(data1);
 								
@@ -141,7 +172,7 @@ else if(playerObj.lvl==3){
 						if(prevWords.indexOf(randomIndex)==-1){
 								found=1;
 								prevWords.push(randomIndex);
-								currentWord=lvl1Words[randomIndex].word;
+								currentWord=lvl3Words[randomIndex].word;
 								for (var i = 0; i < currentWord.length; i++) {
 									data=document.createElement('td');
 									letter=document.createElement('p');
@@ -152,7 +183,7 @@ else if(playerObj.lvl==3){
 								}
 								data1=document.createElement('td');
 								description=document.createElement('p');
-								description.innerHTML=arrayObjectsL1[randomIndex].desc;
+								description.innerHTML=lvl3Words[randomIndex].desc;
 								data1.appendChild(description);
 								row.appendChild(data1);
 								
@@ -162,6 +193,6 @@ else if(playerObj.lvl==3){
 						}
 					
 				}while(found!=1)
-		}		
+			}		
+		}
 	}
-}
