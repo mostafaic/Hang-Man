@@ -49,7 +49,7 @@ function getWord(){
 								letter.innerHTML="__";
 								data.appendChild(letter);		
 								row.appendChild(data);
-								currentWord=lvl1Words.word;
+								currentWord=lvl1Words[randomIndex].word;
 						}else{
 						}
 					
@@ -70,7 +70,7 @@ function getWord(){
 								letter.innerHTML="__";
 								data.appendChild(letter);		
 								row.appendChild(data);
-								currentWord=lvl2Words.word;
+								currentWord=lvl2Words[randomIndex].word;
 						}else{
 						}
 					
@@ -92,7 +92,7 @@ else if(playerObj.lvl==3){
 								letter.innerHTML="__";
 								data.appendChild(letter);		
 								row.appendChild(data);
-								currentWord=lvl3Words.word;
+								currentWord=lvl3Words[randomIndex].word;
 						}else{
 						}
 					
