@@ -1,7 +1,8 @@
 function won()
 {
 	playerObj.score = playerObj.guessedInARow*10;
-	if (wordsCounter == 3)
+	var score = document.getElementById('score');
+	if (wordsCounter == 1)
 	{
 		playerObj.lvl++;
 		wordsCounter = 0;	
@@ -10,9 +11,9 @@ function won()
 	else
 	{	
 		wordsCounter++;
-		gameReset(1);
+		gameReset(1); 
 	}
-	
+	score.textContent = playerObj.score;
 	//drawBadges();
 	
 }
