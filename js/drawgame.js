@@ -13,11 +13,13 @@ document.body.innerHTML = '';
  playerName.style.marginLeft = "150px";
  playerInfo.appendChild(playerName);
 //---------------------------------------------------------------
+ /*
  var playerLevel = document.createElement('label');
  playerLevel.textContent = playerObj.lvl;
  playerLevel.style.fontSize = "40px";
  playerLevel.style.marginLeft = "50px";
  playerInfo.appendChild(playerLevel);
+*/
 //---------------------------------------------------------------
 var characterPhoto = document.createElement('img');
  characterPhoto.style.marginLeft = "50px";
