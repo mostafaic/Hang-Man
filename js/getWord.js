@@ -50,6 +50,12 @@ function getWord(){
 									data.appendChild(letter);		
 									row.appendChild(data);	
 								}
+								data1=document.createElement('td');
+								description=document.createElement('p');
+								description.innerHTML=arrayObjectsL1[randomIndex].desc;
+								data1.appendChild(description);
+								row.appendChild(data1);
+								
 								word.appendChild(row);
 								divId.appendChild(word);
 						}else{
@@ -58,8 +64,10 @@ function getWord(){
 				}while(found!=1)
 				
 	}else if(playerObj.lvl==2){
-		prevWords=[];
-		var max = lvl2Words.length;
+		if(level1==0){
+			level1=1;
+			prevWords=[];
+			var max = lvl2Words.length;
 					row=document.createElement('tr');
 				do{
 						randomIndex=Math.floor(Math.random()*(max-min)+min);
@@ -76,18 +84,27 @@ function getWord(){
 									data.appendChild(letter);		
 									row.appendChild(data);	
 								}
+								data1=document.createElement('td');
+								description=document.createElement('p');
+								description.innerHTML=arrayObjectsL1[randomIndex].desc;
+								data1.appendChild(description);
+								row.appendChild(data1);
+								
 								word.appendChild(row);
 								divId.appendChild(word);	
 						}else{
 						}
 					
 				}while(found!=1)
+				
 }
 
 else if(playerObj.lvl==3){
-	prevWords=[]
+	if(level2==0){
+		level2=1;
+		prevWords=[]
 		var max = lvl3Words.length;
-					row=document.createElement('tr');
+		row=document.createElement('tr');
 				do{
 						randomIndex=Math.floor(Math.random()*(max-min)+min);
 						
@@ -103,11 +120,48 @@ else if(playerObj.lvl==3){
 									data.appendChild(letter);		
 									row.appendChild(data);	
 								}
+								data1=document.createElement('td');
+								description=document.createElement('p');
+								description.innerHTML=arrayObjectsL1[randomIndex].desc;
+								data1.appendChild(description);
+								row.appendChild(data1);
+								
 								word.appendChild(row);
 								divId.appendChild(word);
 						}else{
 						}
 					
 				}while(found!=1)
-}
+	}else{
+		var max = lvl3Words.length;
+		row=document.createElement('tr');
+				do{
+						randomIndex=Math.floor(Math.random()*(max-min)+min);
+						
+						if(prevWords.indexOf(randomIndex)==-1){
+								found=1;
+								prevWords.push(randomIndex);
+								currentWord=lvl1Words[randomIndex].word;
+								for (var i = 0; i < currentWord.length; i++) {
+									data=document.createElement('td');
+									letter=document.createElement('p');
+									letter.innerHTML="__";
+									letter.id = letterIndex+i;
+									data.appendChild(letter);		
+									row.appendChild(data);	
+								}
+								data1=document.createElement('td');
+								description=document.createElement('p');
+								description.innerHTML=arrayObjectsL1[randomIndex].desc;
+								data1.appendChild(description);
+								row.appendChild(data1);
+								
+								word.appendChild(row);
+								divId.appendChild(word);
+						}else{
+						}
+					
+				}while(found!=1)
+		}		
+	}
 }
