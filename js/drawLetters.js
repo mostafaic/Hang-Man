@@ -8,8 +8,8 @@ function drawLetters(){
 	//table of letters 
 	var letters = document.createElement('table');
 	letters.setAttribute('id','letters');
-	
-	
+	letters.style.width = '100%';
+	letters.style.height = '100%';
 	//variables to create row ,data and buttons of table
 	var row,data,letterButtons;
 	
@@ -22,6 +22,8 @@ function drawLetters(){
 	//append letters to the table //////////////////////////////////////////
 	for(var rows=0;rows<5;rows++){
 		row=document.createElement('tr');
+		row.style.width = '100%';
+		row.style.height = '16%';
 		letters.appendChild(row);
 		for(var cols=0;cols<5;cols++){
 			data=document.createElement('td');
@@ -29,7 +31,8 @@ function drawLetters(){
 			letterButtons.value=alphabets[alphabetIndex];
 			letterButtons.innerHTML=alphabets[alphabetIndex];
 			letterButtons.id=alphabetIndex;
-			
+			letterButtons.style.width = '100%';
+			letterButtons.style.height = '100%';
 			//onclick letter
 			letterButtons.onclick=function(){
 				//validate the letter then pass it 
@@ -50,6 +53,8 @@ function drawLetters(){
 		letterButtons.value=alphabets[alphabetIndex];
 		letterButtons.innerHTML=alphabets[alphabetIndex];
 		letterButtons.id=alphabetIndex;
+		letterButtons.style.width = '100%';
+		letterButtons.style.height = '100%';
 		data.appendChild(letterButtons);
 		row.appendChild(data);
 	
