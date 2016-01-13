@@ -26,5 +26,7 @@ var wordsPicked = [];
 var wordsCounter = 0;
 var wrongArray=[];
 var currentWord ;
-//global array to save the previous words indices 
+//global array to save the previous words indices **By A.Sobhy
 var prevWords=[];
+//global vars to check level up to get new words and empty prevWords array **By A.Sobhy
+var level1=0,level2=0;
