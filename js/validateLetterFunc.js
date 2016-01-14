@@ -13,7 +13,6 @@ function validateLetter(letter)
 			putLetter(letter,ids+(i));
 		}
 	}
-
 	if (!isGuessedRight)
 	{
 		wrongLetter(letter);
@@ -33,7 +32,6 @@ function putLetter(letter,index)
 	letterCell.textContent = letter.toUpperCase();
 	if(wordTemp.length == currentWord.length)
 	{
-		alert('Win');
 		won();
 		wordTemp  = [];
 	}

@@ -23,7 +23,22 @@ showpopup()
 function gameOver(){
     playerObj.score += playerObj.guessedInARow*10;
 	document.location = 'gameOver.html?'+playerObj.score;
-    playerObj.score = 0;
+    playerObj = 
+    {
+        'name':null,
+        'gender':null,
+        'score':0,
+        'guessedInARow':0,
+        'lvl':1,
+        'badges':{
+            'lvl_1':false,
+            'lvl_2':false,
+            'lvl_3':false,
+            'proGuesser':false,
+            'noHint':false
+        }
+    }
+
 }
 /*function restartGame()
 {
