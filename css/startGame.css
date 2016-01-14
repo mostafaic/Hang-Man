@@ -25,3 +25,15 @@ p{
 font-family: Shirley; 
    text-align:center;	
 }
+#btn{
+
+/* mouse over link */
+hover {
+    color: red;
+}
+}
+#marq{
+	-webkit-marquee: up medium infinite scroll normal;
+	overflow-x: -webkit-marquee;
+	size:500;
+}

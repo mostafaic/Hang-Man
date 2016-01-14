@@ -1,5 +1,13 @@
 function wrongLetter(letter){
 var divOfWrongLetter = document.getElementById('wrongLetters');
+/*
+var audio = document.createElement('audio');
+audio.setAttribute('autoplay','');
+audio.textContent="<source src='audio/beep4.mp3'>"
+divOfWrongLetter.appendChild(audio);
+*/
+var beep = new Audio("audio/beep4.mp3");
+beep.play();
 if(divOfWrongLetter.innerHTML==''){
 var list = document.createElement('ul');
 list.setAttribute('id','list');

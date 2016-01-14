@@ -33,6 +33,9 @@ function drawLetters(){
 			letterButtons.id=alphabetIndex;
 			letterButtons.style.width = '100%';
 			letterButtons.style.height = '100%';
+			letterButtons.style.color = "#33ccff";
+			letterButtons.style.fontSize  = "40px";
+			letterButtons.style.background = "#0066ff"
 			//onclick letter
 			letterButtons.onclick=function(){
 				//validate the letter then pass it 
@@ -55,6 +58,9 @@ function drawLetters(){
 		letterButtons.id=alphabetIndex;
 		letterButtons.style.width = '100%';
 		letterButtons.style.height = '100%';
+		letterButtons.style.color = "#33ccff";
+		letterButtons.style.fontSize  = "40px";
+		letterButtons.style.background = "#0066ff"
 		data.appendChild(letterButtons);
 		row.appendChild(data);
 	

@@ -14,10 +14,11 @@
       <script src="js/won.js"></script>
       <script src="js/wrongletters.js"></script>
       <script src="js/gameReset.js"></script>
+      <script src="js/drawBadges.js"></script>
       <script src="js/levelUp.js"></script>
       <script src="js/hang.js"></script>
+      <script src="js/charging.js"></script>
       <script src="js/lost.js"></script>
-
               </head>
 <body bgcolor="#00BFFF" align=center>
           			
@@ -25,23 +26,18 @@
           <img align=right height=400  src="img/sty.png">
 
 
-          <header>
-          			<!-- <h1>The Hang Man Game</h1> -->
-          			<img src="img/hangman2.png"
-          			     width=600
-          			     height=400 > 
-    
-          </header>
+         
          
           <div>
           	   <table align=center
           	   		  width=200	 >
-          	   			<tr>
+          	   		<tr>
           	   			<td rowspan="2"><input type="text" name="playerName" id="pName" placeholder="Type Your Name" class="cName">
-                       <button id='btn' ><img src="img/start2.png" width=100 height=50></button>
           	   					</td>
           	   			
+						
           	   				<td width="90%" height="100">
+								
           	   					<img src="img/female.png" height=180> 
           	   				    <input type="radio" name="gender" value="female"/>
           	   					
@@ -52,10 +48,19 @@
 
 
           	   				</td>
-          	   			
+							<td>
+							<button id='btn' ><img src="img/start2.png" width=100 height=50></button>
+							</td>
           	   				
           	   			</tr>
 
+                    <header>
+          	        		<!-- <h1>The Hang Man Game</h1> -->
+          		        	<img src="img/hangman2.png"
+          			          width=500
+          			          height=300 > 
+    
+                 </header>
           	   </table>
  				</div>
  				<p>&copy;Doers Team-ITI-OSAD-NoZha</p>
