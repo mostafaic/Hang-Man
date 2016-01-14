@@ -17,10 +17,11 @@ function won()
 		charge();
 	}
 	score.textContent = playerObj.score;
-	if (playerObj.guessedInARow == currentWord)
+	if (letterGuessed == currentWord.length)
 	{
 		console.log('guess');
 		playerObj.badges.proGuesser = true;
+		letterGuessed = 0;
 		drawBadges();
 	}
 	
