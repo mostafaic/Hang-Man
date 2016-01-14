@@ -13,7 +13,6 @@ function validateLetter(letter)
 			putLetter(letter,ids+(i));
 		}
 	}
-
 	if (!isGuessedRight)
 	{
 		wrongLetter(letter);
