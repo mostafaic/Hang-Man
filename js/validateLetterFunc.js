@@ -11,7 +11,7 @@ function validateLetter(letter)
 			isGuessedRight = true;
 			letterGuessed++;
 			playerObj.guessedInARow++;
-			putLetter(letter,ids+(i));
+			putLetter(letter,ids+(i),false);
 		}
 	}
 	if (!isGuessedRight)
@@ -25,16 +25,26 @@ function validateLetter(letter)
 	}
 	
 }
-function putLetter(letter,index)
+function putLetter(letter,index,automated)
 {
-	var yeah = new Audio("audio/yeah.mp3");
-	yeah.play();
 	wordTemp.push(letter);
 	var letterCell = document.getElementById(index);
 	letterCell.textContent = letter.toUpperCase();
-	if(wordTemp.length == currentWord.length)
+	if (!automated)
+	{
+		var yeah = new Audio("audio/yeah.mp3");
+		yeah.play();
+	}
+	if(wordTemp.length == currentWord.length && !automated)
 	{
 		won();
 		wordTemp  = [];
+	}
+}
+function testWord()
+{
+	
+	for (var i = 0; i < currentWord.length; i++) {
+		putLetter(currentWord.charAt(i),i+30,false);	
 	}
 }
