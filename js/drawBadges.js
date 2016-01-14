@@ -4,6 +4,7 @@ function drawBadges(){
 	img3=document.getElementById('3');
 	img4=document.getElementById('4');
 	img5=document.getElementById('5');
+	
 	if(playerObj.badges.lvl_1==true){
 		img1.src = "img/New images/lev 1.png";
 	}
