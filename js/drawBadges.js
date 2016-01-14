@@ -1,9 +1,9 @@
 function drawBadges(){
-	img1=document.getElementById('1');
-	img2=document.getElementById('2');
-	img3=document.getElementById('3');
-	img4=document.getElementById('4');
-	img5=document.getElementById('5');
+	img1=document.getElementById('img1');
+	img2=document.getElementById('img2');
+	img3=document.getElementById('img3');
+	img4=document.getElementById('img4');
+	img5=document.getElementById('img5');
 	
 	if(playerObj.badges.lvl_1==true){
 		img1.src = "img/New images/lev 1.png";
