@@ -32,7 +32,6 @@ function putLetter(letter,index)
 	letterCell.textContent = letter.toUpperCase();
 	if(wordTemp.length == currentWord.length)
 	{
-		alert('Win');
 		won();
 		wordTemp  = [];
 	}
