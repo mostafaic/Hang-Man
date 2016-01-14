@@ -10,7 +10,7 @@ function won()
 		drawBadges();
 	}
 	var waitTime = setTimeout(function(){
-		if (wordsCounter == 9)
+		if (wordsCounter == 2)
 		{
 			playerObj.lvl++;
 			wordsCounter = 0;	
