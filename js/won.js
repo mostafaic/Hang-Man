@@ -4,7 +4,13 @@ function won()
 	clap.play();
 	playerObj.score += playerObj.guessedInARow*10;
 	var score = document.getElementById('score');
-	if (wordsCounter == 1)
+	if (letterGuessed == currentWord.length)
+	{
+		playerObj.badges.proGuesser = true;
+		letterGuessed = 0;
+		drawBadges();
+	}
+	if (wordsCounter == 9)
 	{
 		playerObj.lvl++;
 		wordsCounter = 0;	
@@ -17,12 +23,6 @@ function won()
 		charge();
 	}
 	score.textContent = playerObj.score;
-	if (playerObj.guessedInARow == currentWord)
-	{
-		console.log('guess');
-		playerObj.badges.proGuesser = true;
-		drawBadges();
-	}
 	
 	
 }

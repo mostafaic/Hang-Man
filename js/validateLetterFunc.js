@@ -9,6 +9,7 @@ function validateLetter(letter)
 		if (letter == currentWord.charAt(i))
 		{
 			isGuessedRight = true;
+			letterGuessed++;
 			playerObj.guessedInARow++;
 			putLetter(letter,ids+(i));
 		}
@@ -19,6 +20,7 @@ function validateLetter(letter)
 		if (playerObj.guessedInARow > 1)
 		{
 			playerObj.guessedInARow--;
+			letterGuessed = 0;
 		}
 	}
 	

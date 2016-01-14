@@ -30,4 +30,4 @@ var currentWord ;
 var prevWords=[];
 //global vars to check level up to get new words and empty prevWords array **By A.Sobhy
 var level1=0,level2=0;
-var letterGueesed = 0;
+var letterGuessed = 0;

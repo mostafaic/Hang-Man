@@ -19,28 +19,28 @@ function getWord(){
 					 {'word':'bird','desc':'have wings','hint':''},{'word':'ocean','desc':'bigger than sea','hint':''},
 					 {'word':'milk','desc':'something drunk on the morning','hint':''},{'word':'mimic','desc':'to imitate someone','hint':''},
 					 {'word':'corn','desc':'Cinema favorite habit','hint':''},{'word':'sponge','desc':'Used to clean things','hint':''},
-					 {'word':'ship','desc':'sail on the sea','hint':''},{'word':'adult','desc':'','hint':''},
+					 {'word':'ship','desc':'sail on the sea','hint':''},{'word':'adult','desc':'grown up','hint':''},
 					 {'word':'meat','desc':'buy from the butcher','hint':''},{'word':'dread','desc':'Horribaly bad','hint':''},
 					 {'word':'crumble','desc':'Fail apart','hint':''}];
 	
-	var lvl2Words = [{'word':'promise ','desc':'everything will be taken care of—you have my word','hint':''},
+	var lvl2Words = [{'word':'promise','desc':'everything will be taken care of—you have my word','hint':''},
 					 {'word':'Linguistics','desc':' one of the units of speech or writing ','hint':''},
 			   	   	 {'word':'tribe','desc':'A group of people','hint':''},{'word':'fence','desc':'What surround propreties','hint':''},
-					 {'word':'shred','desc':'Cut into pieces','hint':''},{'word':'rice ','desc':'something you can eat it and it`s color white','hint':''},
+					 {'word':'shred','desc':'Cut into pieces','hint':''},{'word':'rice','desc':'something you can eat it and it`s color white','hint':''},
 					 {'word':'music','desc':' enjoy when you listen to it ','hint':''},
 			   	   	 {'word':'cat','desc':'A group of people','hint':''},{'word':'rain','desc':'water dropped from the sky','hint':''},
-					 {'word':'sun ','desc':'the first light on the morning','hint':''},
+					 {'word':'sun','desc':'the first light on the morning','hint':''},
 					 {'word':'phone','desc':'call your friend using it ','hint':''},
 			   	   	 {'word':'house','desc':'where do you live !!','hint':''}];
 					 
-	var lvl3Words = [{'word':'restaurant ','desc':'somewhere you can eat with your friends','hint':''},
+	var lvl3Words = [{'word':'restaurant','desc':'somewhere you can eat with your friends','hint':''},
 					 {'word':'beach','desc':'somewhere you can go to at the summer ','hint':''},
-			   	   	 {'word':'Eiffel Tower','desc':'the most famous thing at paris','hint':''},
+			   	   	 {'word':'Eiffel','desc':'the most famous thing at paris','hint':''},
 					 {'word':'internet','desc':'used to connect with other people all over the world','hint':''},
-					 {'word':'grandmother','desc':'your mother`s mom','hint':''},{'word':'college ','desc':'somewhere you will go after high school','hint':''},
+					 {'word':'grandmother','desc':'your mother`s mom','hint':''},{'word':'college','desc':'somewhere you will go after high school','hint':''},
 					 {'word':'hair','desc':' you have it and it`s color black ','hint':''},
 			   	   	 {'word':'bus','desc':'ride it to the school','hint':''},{'word':'wings','desc':'some thing belong to birds only','hint':''},
-					 {'word':'island ','desc':'somewhere inside the sea','hint':''},
+					 {'word':'island','desc':'somewhere inside the sea','hint':''},
 					 {'word':'today','desc':'the day before tommrrow ','hint':''},
 			   	   	 {'word':'market','desc':'somewhere you can buy somethings','hint':''}];	
 	
@@ -64,12 +64,32 @@ function getWord(){
 									data=document.createElement('td');
 									letter=document.createElement('p');
 									letter.innerHTML="__";
+									letter.style.background = "#0066ff";
+									letter.style.color= "#33ccff";
 									letter.id = letterIndex+i;
 									data.appendChild(letter);		
 									row.appendChild(data);	
 								}
 								data1=document.createElement('td');
 								description=document.createElement('p');
+								//style for description//////
+								description.style.width = '100%';
+								description.style.height = '100%';
+								description.style.color = "##6600ff";
+								description.style.fontSize  = "35px";
+								description.style.background = "#0066ff";					
+								
+								description.style.border = "1px solid #000"
+								
+								description.style.borderWidth = "1px";
+								description.style.borderColor = "#000";
+								description.style.borderStyle = "solid";
+								description.style.borderTop = "4px dashed greed";
+								
+								description.style.borderTopWidth = "4px";
+								description.style.borderTopColor = "#8080ff";
+								description.style.borderTopStyle = "dashed";
+								
 								description.innerHTML=lvl1Words[randomIndex].desc;
 								data1.appendChild(description);
 								row.appendChild(data1);
@@ -98,12 +118,32 @@ function getWord(){
 									data=document.createElement('td');
 									letter=document.createElement('p');
 									letter.innerHTML="__";
+									letter.style.background = "#0066ff";
+									letter.style.color= "#33ccff";
 									letter.id = letterIndex+i;
 									data.appendChild(letter);		
 									row.appendChild(data);	
 								}
 								data1=document.createElement('td');
 								description=document.createElement('p');
+								//style for description//////
+								description.style.width = '100%';
+								description.style.height = '100%';
+								description.style.color = "##6600ff";
+								description.style.fontSize  = "35px";
+								description.style.background = "#0066ff";					
+								
+								description.style.border = "1px solid #000"
+								
+								description.style.borderWidth = "1px";
+								description.style.borderColor = "#000";
+								description.style.borderStyle = "solid";
+								description.style.borderTop = "4px dashed greed";
+								
+								description.style.borderTopWidth = "4px";
+								description.style.borderTopColor = "#8080ff";
+								description.style.borderTopStyle = "dashed";
+								
 								description.innerHTML=lvl2Words[randomIndex].desc;
 								data1.appendChild(description);
 								row.appendChild(data1);
@@ -129,12 +169,32 @@ function getWord(){
 									data=document.createElement('td');
 									letter=document.createElement('p');
 									letter.innerHTML="__";
+									letter.style.background = "#0066ff";
+									letter.style.color= "#33ccff";
 									letter.id = letterIndex+i;
 									data.appendChild(letter);		
 									row.appendChild(data);	
 								}
 								data1=document.createElement('td');
 								description=document.createElement('p');
+								//style for description//////
+								description.style.width = '100%';
+								description.style.height = '100%';
+								description.style.color = "##6600ff";
+								description.style.fontSize  = "35px";
+								description.style.background = "#0066ff";					
+								
+								description.style.border = "1px solid #000"
+								
+								description.style.borderWidth = "1px";
+								description.style.borderColor = "#000";
+								description.style.borderStyle = "solid";
+								description.style.borderTop = "4px dashed greed";
+								
+								description.style.borderTopWidth = "4px";
+								description.style.borderTopColor = "#8080ff";
+								description.style.borderTopStyle = "dashed";
+								
 								description.innerHTML=lvl2Words[randomIndex].desc;
 								data1.appendChild(description);
 								row.appendChild(data1);
@@ -165,12 +225,32 @@ else if(playerObj.lvl==3){
 									data=document.createElement('td');
 									letter=document.createElement('p');
 									letter.innerHTML="__";
+									letter.style.background = "#0066ff";
+									letter.style.color= "#33ccff";
 									letter.id = letterIndex+i;
 									data.appendChild(letter);		
 									row.appendChild(data);	
 								}
 								data1=document.createElement('td');
 								description=document.createElement('p');
+								//style for description//////
+								description.style.width = '100%';
+								description.style.height = '100%';
+								description.style.color = "##6600ff";
+								description.style.fontSize  = "35px";
+								description.style.background = "#0066ff";					
+								
+								description.style.border = "1px solid #000"
+								
+								description.style.borderWidth = "1px";
+								description.style.borderColor = "#000";
+								description.style.borderStyle = "solid";
+								description.style.borderTop = "4px dashed greed";
+								
+								description.style.borderTopWidth = "4px";
+								description.style.borderTopColor = "#8080ff";
+								description.style.borderTopStyle = "dashed";
+								
 								description.innerHTML=lvl3Words[randomIndex].desc;
 								data1.appendChild(description);
 								row.appendChild(data1);
@@ -195,12 +275,32 @@ else if(playerObj.lvl==3){
 									data=document.createElement('td');
 									letter=document.createElement('p');
 									letter.innerHTML="__";
+									letter.style.background = "#0066ff";
+									letter.style.color= "#33ccff";
 									letter.id = letterIndex+i;
 									data.appendChild(letter);		
 									row.appendChild(data);	
 								}
 								data1=document.createElement('td');
 								description=document.createElement('p');
+								//style for description//////
+								description.style.width = '100%';
+								description.style.height = '100%';
+								description.style.color = "##6600ff";
+								description.style.fontSize  = "35px";
+								description.style.background = "#0066ff";					
+								
+								description.style.border = "1px solid #000"
+								
+								description.style.borderWidth = "1px";
+								description.style.borderColor = "#000";
+								description.style.borderStyle = "solid";
+								description.style.borderTop = "4px dashed greed";
+								
+								description.style.borderTopWidth = "4px";
+								description.style.borderTopColor = "#8080ff";
+								description.style.borderTopStyle = "dashed";
+								
 								description.innerHTML=lvl3Words[randomIndex].desc;
 								data1.appendChild(description);
 								row.appendChild(data1);
