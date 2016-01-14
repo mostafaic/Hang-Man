@@ -13,7 +13,6 @@ function validateLetter(letter)
 			putLetter(letter,ids+(i));
 		}
 	}
-
 	if (!isGuessedRight)
 	{
 		wrongLetter(letter);
@@ -26,6 +25,8 @@ function validateLetter(letter)
 }
 function putLetter(letter,index)
 {
+	var yeah = new Audio("audio/yeah.mp3");
+	yeah.play();
 	wordTemp.push(letter);
 	var letterCell = document.getElementById(index);
 	letterCell.textContent = letter.toUpperCase();
