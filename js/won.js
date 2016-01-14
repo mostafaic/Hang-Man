@@ -10,18 +10,22 @@ function won()
 		letterGuessed = 0;
 		drawBadges();
 	}
-	if (wordsCounter == 9)
+	var waitTime = setTimeout(function(){
+		if (wordsCounter == 9)
 	{
 		playerObj.lvl++;
 		wordsCounter = 0;	
 		gameReset(2);
+		playerObj.usedHint = false;
 	}
 	else
 	{	
 		wordsCounter++;
 		gameReset(1); 
 		charge();
+		playerObj.usedHint = false;
 	}
+	},5000);
 	score.textContent = playerObj.score;
 	
 	
