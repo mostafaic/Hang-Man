@@ -20,6 +20,7 @@ function validateLetter(letter)
 		if (playerObj.guessedInARow > 1)
 		{
 			playerObj.guessedInARow--;
+			letterGuessed = 0;
 		}
 	}
 	
