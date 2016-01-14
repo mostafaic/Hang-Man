@@ -17,7 +17,7 @@ function validateLetter(letter)
 	if (!isGuessedRight)
 	{
 		wrongLetter(letter);
-		if (playerObj.guessedInARow != 0)
+		if (playerObj.guessedInARow > 1)
 		{
 			playerObj.guessedInARow--;
 		}

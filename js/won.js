@@ -1,6 +1,6 @@
 function won()
 {
-	playerObj.score = playerObj.guessedInARow*10;
+	playerObj.score += playerObj.guessedInARow*10;
 	var score = document.getElementById('score');
 	if (wordsCounter == 1)
 	{
