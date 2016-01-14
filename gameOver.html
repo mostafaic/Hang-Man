@@ -2,13 +2,15 @@
 <html>
 	<head> <title> Game over </title>
     <link rel="stylesheet" type="text/css" href="css/gameOver.css">
+    <script src="js/globalVariables.js"></script>
+    <script src="js/gameOver.js"></script>
   	</head>
 
 	<body align="center">
 
      <!-- Test the page -->
 
-	  <button onclick="test()">Click me To Test the function</button>
+	  <!-- <button onclick="test()">Click me To Test the function</button> -->
 
      <!--for the whole page to be transparent-->
 		<div id='sleep'></div>    <!-- body -->
@@ -16,17 +18,14 @@
 
      <!-- for the content to show up -->
 
-        <font class='fonts' size="6" color="white"> your score is : </font> <br>
-
 		<font class='fonts'  id='fData' size="7" color="white">123527</font>  
 	    <img src="img/game.png"><br>
-
-		<button onclick="retryGame()"><img src="img/retryb.png" width=150 height=50> </button>
+	    <font class='fonts' size="6" color="black" id="finalScore"> your score is : </font></div>
+	    </br>
+		<button id="retry"><img src="img/retryb.png" width=150 height=50> </button>
 
 		</div>   
         
 </body>
-
-	  <script type="text/javascript" src="js/gameOver.js"></script>
 
 </html>
