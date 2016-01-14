@@ -86,10 +86,10 @@ image2.style.height="100px";
  
  
  var charging = document.createElement('img');
- charging.setAttribute('src', 'img/charging.jpg');
+ charging.setAttribute('src', 'img/ch/0.png');
  charging.setAttribute('id', 'chargingg');
  charging.style.height= '10%';
- charging.style.width= '20%';
+ charging.style.width= '40%';
  GameMap.appendChild(charging);
 
  	// Div of the big container which inlude the div of all letters , the div of wrong letters and the div of hangman 
