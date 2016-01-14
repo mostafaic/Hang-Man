@@ -17,10 +17,10 @@ function validateLetter(letter)
 	if (!isGuessedRight)
 	{
 		wrongLetter(letter);
+		letterGuessed--;
 		if (playerObj.guessedInARow > 1)
 		{
 			playerObj.guessedInARow--;
-			letterGuessed = 0;
 		}
 	}
 	
