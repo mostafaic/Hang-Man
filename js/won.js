@@ -1,5 +1,7 @@
 function won()
 {
+	var clap = new Audio("audio/Clapping.wav");
+	clap.play();
 	playerObj.score += playerObj.guessedInARow*10;
 	var score = document.getElementById('score');
 	if (wordsCounter == 1)
