@@ -19,7 +19,7 @@ function won()
 	{
 		console.log('guess');
 		playerObj.badges.proGuesser = true;
-		//drawBadges();
+		drawBadges();
 	}
 	
 	
