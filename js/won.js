@@ -14,8 +14,15 @@ function won()
 	{	
 		wordsCounter++;
 		gameReset(1); 
+		charge();
 	}
 	score.textContent = playerObj.score;
-	//drawBadges();
+	if (playerObj.guessedInARow == currentWord)
+	{
+		console.log('guess');
+		playerObj.badges.proGuesser = true;
+		//drawBadges();
+	}
+	
 	
 }
