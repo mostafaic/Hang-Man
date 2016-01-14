@@ -81,38 +81,16 @@ image2.style.height="100px";
  GameMap.style.marginTop = '2px';
 
  //design level stars and state 
- var levelstate = document.createElement('img');
- levelstate.setAttribute('src' , 'img/easy.png');
- levelstate.setAttribute('id' , 'levelstate');
- levelstate.style.marginLeft = '400px';
- levelstate.style.height= '90%';
- levelstate.style.width= '10%';
-
- var level1 = document.createElement('img');
- level1.setAttribute('src', 'img/active.JPG'); 
- level1.setAttribute('id' , 'level1');
- level1.style.marginLeft='70px';
- level1.style.height= '90%';
- level1.style.width= '10%';
- 
- var level2 = document.createElement('img');
- level2.setAttribute('src', 'img/deactive.png');
- level2.setAttribute('id', 'level2');
- level2.style.height= '90%';
- level2.style.width= '10%';
- 
- var level3 = document.createElement('img');
- level3.setAttribute('src', 'img/deactive.png');
- level3.setAttribute('id', 'level3');
- level3.style.height= '90%';
- level3.style.width= '10%';
  
 
  
- GameMap.appendChild(levelstate);
- GameMap.appendChild(level1);
- GameMap.appendChild(level2);
- GameMap.appendChild(level3);
+ 
+ var charging = document.createElement('img');
+ charging.setAttribute('src', 'img/charging.jpg');
+ charging.setAttribute('id', 'chargingg');
+ charging.style.height= '10%';
+ charging.style.width= '20%';
+ GameMap.appendChild(charging);
 
  	// Div of the big container which inlude the div of all letters , the div of wrong letters and the div of hangman 
 var bigContainer = document.createElement('div');
