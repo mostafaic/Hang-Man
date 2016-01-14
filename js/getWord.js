@@ -64,12 +64,32 @@ function getWord(){
 									data=document.createElement('td');
 									letter=document.createElement('p');
 									letter.innerHTML="__";
+									letter.style.background = "#0066ff";
+									letter.style.color= "#33ccff";
 									letter.id = letterIndex+i;
 									data.appendChild(letter);		
 									row.appendChild(data);	
 								}
 								data1=document.createElement('td');
 								description=document.createElement('p');
+								//style for description//////
+								description.style.width = '100%';
+								description.style.height = '100%';
+								description.style.color = "##6600ff";
+								description.style.fontSize  = "35px";
+								description.style.background = "#0066ff";					
+								
+								description.style.border = "1px solid #000"
+								
+								description.style.borderWidth = "1px";
+								description.style.borderColor = "#000";
+								description.style.borderStyle = "solid";
+								description.style.borderTop = "4px dashed greed";
+								
+								description.style.borderTopWidth = "4px";
+								description.style.borderTopColor = "#8080ff";
+								description.style.borderTopStyle = "dashed";
+								
 								description.innerHTML=lvl1Words[randomIndex].desc;
 								data1.appendChild(description);
 								row.appendChild(data1);
@@ -98,12 +118,32 @@ function getWord(){
 									data=document.createElement('td');
 									letter=document.createElement('p');
 									letter.innerHTML="__";
+									letter.style.background = "#0066ff";
+									letter.style.color= "#33ccff";
 									letter.id = letterIndex+i;
 									data.appendChild(letter);		
 									row.appendChild(data);	
 								}
 								data1=document.createElement('td');
 								description=document.createElement('p');
+								//style for description//////
+								description.style.width = '100%';
+								description.style.height = '100%';
+								description.style.color = "##6600ff";
+								description.style.fontSize  = "35px";
+								description.style.background = "#0066ff";					
+								
+								description.style.border = "1px solid #000"
+								
+								description.style.borderWidth = "1px";
+								description.style.borderColor = "#000";
+								description.style.borderStyle = "solid";
+								description.style.borderTop = "4px dashed greed";
+								
+								description.style.borderTopWidth = "4px";
+								description.style.borderTopColor = "#8080ff";
+								description.style.borderTopStyle = "dashed";
+								
 								description.innerHTML=lvl2Words[randomIndex].desc;
 								data1.appendChild(description);
 								row.appendChild(data1);
@@ -129,12 +169,32 @@ function getWord(){
 									data=document.createElement('td');
 									letter=document.createElement('p');
 									letter.innerHTML="__";
+									letter.style.background = "#0066ff";
+									letter.style.color= "#33ccff";
 									letter.id = letterIndex+i;
 									data.appendChild(letter);		
 									row.appendChild(data);	
 								}
 								data1=document.createElement('td');
 								description=document.createElement('p');
+								//style for description//////
+								description.style.width = '100%';
+								description.style.height = '100%';
+								description.style.color = "##6600ff";
+								description.style.fontSize  = "35px";
+								description.style.background = "#0066ff";					
+								
+								description.style.border = "1px solid #000"
+								
+								description.style.borderWidth = "1px";
+								description.style.borderColor = "#000";
+								description.style.borderStyle = "solid";
+								description.style.borderTop = "4px dashed greed";
+								
+								description.style.borderTopWidth = "4px";
+								description.style.borderTopColor = "#8080ff";
+								description.style.borderTopStyle = "dashed";
+								
 								description.innerHTML=lvl2Words[randomIndex].desc;
 								data1.appendChild(description);
 								row.appendChild(data1);
@@ -165,12 +225,32 @@ else if(playerObj.lvl==3){
 									data=document.createElement('td');
 									letter=document.createElement('p');
 									letter.innerHTML="__";
+									letter.style.background = "#0066ff";
+									letter.style.color= "#33ccff";
 									letter.id = letterIndex+i;
 									data.appendChild(letter);		
 									row.appendChild(data);	
 								}
 								data1=document.createElement('td');
 								description=document.createElement('p');
+								//style for description//////
+								description.style.width = '100%';
+								description.style.height = '100%';
+								description.style.color = "##6600ff";
+								description.style.fontSize  = "35px";
+								description.style.background = "#0066ff";					
+								
+								description.style.border = "1px solid #000"
+								
+								description.style.borderWidth = "1px";
+								description.style.borderColor = "#000";
+								description.style.borderStyle = "solid";
+								description.style.borderTop = "4px dashed greed";
+								
+								description.style.borderTopWidth = "4px";
+								description.style.borderTopColor = "#8080ff";
+								description.style.borderTopStyle = "dashed";
+								
 								description.innerHTML=lvl3Words[randomIndex].desc;
 								data1.appendChild(description);
 								row.appendChild(data1);
@@ -195,12 +275,32 @@ else if(playerObj.lvl==3){
 									data=document.createElement('td');
 									letter=document.createElement('p');
 									letter.innerHTML="__";
+									letter.style.background = "#0066ff";
+									letter.style.color= "#33ccff";
 									letter.id = letterIndex+i;
 									data.appendChild(letter);		
 									row.appendChild(data);	
 								}
 								data1=document.createElement('td');
 								description=document.createElement('p');
+								//style for description//////
+								description.style.width = '100%';
+								description.style.height = '100%';
+								description.style.color = "##6600ff";
+								description.style.fontSize  = "35px";
+								description.style.background = "#0066ff";					
+								
+								description.style.border = "1px solid #000"
+								
+								description.style.borderWidth = "1px";
+								description.style.borderColor = "#000";
+								description.style.borderStyle = "solid";
+								description.style.borderTop = "4px dashed greed";
+								
+								description.style.borderTopWidth = "4px";
+								description.style.borderTopColor = "#8080ff";
+								description.style.borderTopStyle = "dashed";
+								
 								description.innerHTML=lvl3Words[randomIndex].desc;
 								data1.appendChild(description);
 								row.appendChild(data1);
