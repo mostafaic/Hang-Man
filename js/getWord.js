@@ -24,19 +24,19 @@ function getWord(){
 					 {'word':'meat','desc':'buy from the butcher','hint':''},{'word':'dread','desc':'Horribaly bad','hint':''},
 					 {'word':'crumble','desc':'Fail apart','hint':''}];
 	
-	var lvl2Words = [{'word':'promise','desc':'everything will be taken care of—you have my word','hint':''},
-					 {'word':'Linguistics','desc':' one of the units of speech or writing ','hint':''},
+	var lvl2Words = [{'word':'promise','desc':'Something you tell someone to make him trust you','hint':''},
+					 {'word':'linguistics','desc':' one of the units of speech or writing ','hint':''},
 			   	   	 {'word':'tribe','desc':'A group of people','hint':''},{'word':'fence','desc':'What surround propreties','hint':''},
 					 {'word':'shred','desc':'Cut into pieces','hint':''},{'word':'rice','desc':'something you can eat it and it`s color white','hint':''},
 					 {'word':'music','desc':' enjoy when you listen to it ','hint':''},
-			   	   	 {'word':'cat','desc':'A group of people','hint':''},{'word':'rain','desc':'water dropped from the sky','hint':''},
+			   	   	 {'word':'cat','desc':'A nice pet','hint':''},{'word':'rain','desc':'water dropped from the sky','hint':''},
 					 {'word':'sun','desc':'the first light on the morning','hint':''},
 					 {'word':'phone','desc':'call your friend using it ','hint':''},
 			   	   	 {'word':'house','desc':'where do you live !!','hint':''}];
 					 
 	var lvl3Words = [{'word':'restaurant','desc':'somewhere you can eat with your friends','hint':''},
 					 {'word':'beach','desc':'somewhere you can go to at the summer ','hint':''},
-			   	   	 {'word':'Eiffel','desc':'the most famous thing at paris','hint':''},
+			   	   	 {'word':'eiffel','desc':'the most famous thing at paris','hint':''},
 					 {'word':'internet','desc':'used to connect with other people all over the world','hint':''},
 					 {'word':'grandmother','desc':'your mother`s mom','hint':''},{'word':'college','desc':'somewhere you will go after high school','hint':''},
 					 {'word':'hair','desc':' you have it and it`s color black ','hint':''},

@@ -1,5 +1,7 @@
 window.onload = function()
 {
+	var loop = new Audio("audio/loop.mp3");
+    loop.play();
 	var retry = document.getElementById('retry');
 	var score = document.getElementById('finalScore');
 	var query = document.location.search;

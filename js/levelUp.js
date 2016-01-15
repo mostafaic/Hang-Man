@@ -25,8 +25,14 @@ function levelUp(level){
            ohyeah.play();
            playerObj.badges.lvl_3= true;
             drawBadges();
-        }
+            var waitTime = setTimeout(function(){
+            document.location = 'gratz.html?'+playerObj.score;
+               
+             },7000);
 }
+
+        }
+
 
 
 
