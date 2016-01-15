@@ -11,6 +11,7 @@ document.body.innerHTML = '';
  playerName.textContent = playerObj.name;
  playerName.style.fontSize = "40px";
  playerName.style.marginLeft = "150px";
+ playerName.style.fontFamily="cooper black";
  playerInfo.appendChild(playerName);
 //---------------------------------------------------------------
  /*
@@ -34,10 +35,12 @@ var scoreLabel = document.createElement('label');
  scoreLabel.textContent="Score : ";
  scoreLabel.style.fontSize = "40px";
  scoreLabel.style.marginLeft = "50px";
+ scoreLabel.style.fontFamily="cooper black";
  playerInfo.appendChild(scoreLabel);
 var score = document.createElement('label');
  score.setAttribute('id','score'); //ayad	
  score.textContent=playerObj.score;
+ score.style.fontFamily="cooper black";
  score.style.fontSize = "40px";
  playerInfo.appendChild(score);
 //----------------------------------------------------------------
