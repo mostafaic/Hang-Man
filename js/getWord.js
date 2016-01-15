@@ -19,7 +19,7 @@ function getWord(){
 					 {'word':'milk','desc':'Dairy Drink','hint':''},{'word':'head','desc':'Body Important Part','hint':''},
 					 {'word':'bird','desc':'have wings','hint':''},{'word':'ocean','desc':'bigger than sea','hint':''},
 					 {'word':'milk','desc':'something drunk on the morning','hint':''},{'word':'mimic','desc':'to imitate someone','hint':''},
-					 {'word':'corn','desc':'Cinema favorite habit','hint':''},{'word':'sponge','desc':'Used to clean things','hint':''},
+					 {'word':'popcorn','desc':'Cinema favorite habit','hint':''},{'word':'sponge','desc':'Used to clean things','hint':''},
 					 {'word':'ship','desc':'sail on the sea','hint':''},{'word':'adult','desc':'grown up','hint':''},
 					 {'word':'meat','desc':'buy from the butcher','hint':''},{'word':'dread','desc':'Horribaly bad','hint':''},
 					 {'word':'crumble','desc':'Fail apart','hint':''}];

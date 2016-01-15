@@ -5,7 +5,7 @@
 	var letters     =   document.getElementById('allLetters');
 	var word 		=   document.getElementById('wordId');
 	var hangman 	=   document.getElementById('hangMan');
-		
+	letterGuessed = 0;
 		if (mode == 0){    //game over mode  
 			
 
