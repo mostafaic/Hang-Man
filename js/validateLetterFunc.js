@@ -30,6 +30,7 @@ function putLetter(letter,index,automated)
 	wordTemp.push(letter);
 	var letterCell = document.getElementById(index);
 	letterCell.textContent = letter.toUpperCase();
+	letterCell.style.fontFamily="cooper black";
 	if (!automated)
 	{
 		var yeah = new Audio("audio/yeah.mp3");
