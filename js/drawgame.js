@@ -155,6 +155,9 @@ var guessedWord = document.createElement('div');
 	hintBtn.style.fontFamily="cooper black";
 	hintBtn.style.marginLeft="-350px";
 	hintBtn.setAttribute('align','center');
+	hintBtn.addEventListener('click',function(){
+		hint();
+	});
 	document.body.appendChild(hintBtn);
 	drawLetters();
 	getWord();

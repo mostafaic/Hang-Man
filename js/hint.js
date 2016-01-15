@@ -1,5 +1,6 @@
 function hint()
 {
+
 	if (!playerObj.usedHint)
 	{
 		var randomIndex = Math.floor(Math.random()*currentWord.length);
