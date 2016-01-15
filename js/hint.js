@@ -11,7 +11,7 @@ function hint()
 		var lettersInAWord = 0;
 		while(index < wordTemp.length)
 		{
-			if (letter == wordTemp[index])
+			if (letter == wordTemp[index].character)
 			{
 				hint();
 				isFound = true;
@@ -21,8 +21,8 @@ function hint()
 		}
 		if (!isFound)
 		{
-			putLetter(letter,randomIndex+30,false);
 			playerObj.usedHint = true;
+			putLetter(letter,randomIndex+30,false);
 			for (var i = 0; i < currentWord.length; i++) {
 				if (letter == currentWord.charAt(i))
 				{
@@ -30,7 +30,6 @@ function hint()
 				}
 			}
 			if (lettersInAWord == 1){
-				console.log(lettersArray[letter]);
 				var letterBtn = document.getElementById(lettersArray[letter]);
 				letterBtn.style.display = 'none';
 			}
