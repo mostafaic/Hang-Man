@@ -141,7 +141,18 @@ var guessedWord = document.createElement('div');
  guessedWord.style.marginLeft = '500px';
  guessedWord.style.marginTop = '-10px';
 /////////////////////////////////////////////////////////////////
-	//call drawLetters and getWord functions ***By Sobhy***////
+	//Hint Button 
+	var hintBtn=document.createElement('button');
+	hintBtn.setAttribute('id','hintBtn');
+	hintBtn.textContent="Hint";
+	hintBtn.style.width = '10%';
+	hintBtn.style.height = '10%';
+	hintBtn.style.color = "#33ccff";
+	hintBtn.style.fontSize  = "40px";
+	hintBtn.style.fontFamily="cooper black";
+	hintBtn.style.marginLeft="-350px";
+	hintBtn.setAttribute('align','center');
+	document.body.appendChild(hintBtn);
 	drawLetters();
 	getWord();
 }

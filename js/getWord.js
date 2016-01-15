@@ -79,8 +79,9 @@ function getWord(){
 								description.style.height = '100%';
 								description.style.color = "black";
 								description.style.fontSize  = "35px";
-								description.style.background = "#0066ff";					
-								description.style.border = "2px solid black";
+								description.style.fontFamily = "cooper black";
+								//description.style.background = "#0066ff";					
+								//description.style.border = "2px solid black";
 								description.marginLeft="200px";
 								/*
 								description.style.borderWidth = "1px";
@@ -135,8 +136,9 @@ function getWord(){
 								description.style.height = '100%';
 								description.style.color = "black";
 								description.style.fontSize  = "35px";
-								description.style.background = "#0066ff";					
-								description.style.border = "2px solid black";
+								description.style.fontFamily = "cooper black";
+								//description.style.background = "#0066ff";					
+								//description.style.border = "2px solid black";
 								description.marginLeft="200px";
 								/*
 								description.style.borderWidth = "1px";
@@ -190,8 +192,9 @@ function getWord(){
 								description.style.height = '100%';
 								description.style.color = "black";
 								description.style.fontSize  = "35px";
-								description.style.background = "#0066ff";					
-								description.style.border = "2px solid black";
+								description.style.fontFamily = "cooper black";
+								//description.style.background = "#0066ff";					
+								//description.style.border = "2px solid black";
 								description.marginLeft="200px";
 								/*
 								description.style.borderWidth = "1px";
@@ -248,8 +251,9 @@ else if(playerObj.lvl==3){
 								description.style.height = '100%';
 								description.style.color = "black";
 								description.style.fontSize  = "35px";
-								description.style.background = "#0066ff";					
-								description.style.border = "2px solid black";
+								description.style.fontFamily = "cooper black";
+								//description.style.background = "#0066ff";					
+								//description.style.border = "2px solid black";
 								description.marginLeft="200px";
 								/*
 								description.style.borderWidth = "1px";
@@ -300,8 +304,9 @@ else if(playerObj.lvl==3){
 								description.style.height = '100%';
 								description.style.color = "black";
 								description.style.fontSize  = "35px";
-								description.style.background = "#0066ff";					
-								description.style.border = "2px solid black";
+								description.style.fontFamily = "cooper black";
+								//description.style.background = "#0066ff";					
+								//description.style.border = "2px solid black";
 								description.marginLeft="200px";
 								/*
 								description.style.borderWidth = "1px";

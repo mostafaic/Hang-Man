@@ -35,7 +35,8 @@ function drawLetters(){
 			letterButtons.style.height = '100%';
 			letterButtons.style.color = "#33ccff";
 			letterButtons.style.fontSize  = "40px";
-			letterButtons.style.background = "#0066ff"
+			letterButtons.style.fontFamily="cooper black";
+			//letterButtons.style.background = "#0066ff"
 			//onclick letter
 			letterButtons.onclick=function(){
 				//validate the letter then pass it 
@@ -60,7 +61,8 @@ function drawLetters(){
 		letterButtons.style.height = '100%';
 		letterButtons.style.color = "#33ccff";
 		letterButtons.style.fontSize  = "40px";
-		letterButtons.style.background = "#0066ff"
+		letterButtons.style.fontFamily="cooper black";
+		//letterButtons.style.background = "#0066ff"
 		data.appendChild(letterButtons);
 		row.appendChild(data);
 	
