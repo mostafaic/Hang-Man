@@ -4,7 +4,7 @@ function hint()
 	{
 		var randomIndex = Math.floor(Math.random()*currentWord.length);
 		var letter = currentWord.charAt(randomIndex);
-		putLetter(letter,randomIndex+30);
+		putLetter(letter,randomIndex+30,true);
 		playerObj.usedHint = true;
 	}
 	else

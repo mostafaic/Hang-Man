@@ -9,8 +9,12 @@ function won()
 		playerObj.badges.proGuesser = true;
 		drawBadges();
 	}
+	if (!playerObj.usedHint){
+		playerObj.badges.noHint = true;
+		drawBadges();
+	}
 	var waitTime = setTimeout(function(){
-		if (wordsCounter == 2)
+		if (wordsCounter == 10)
 		{
 			playerObj.lvl++;
 			wordsCounter = 0;	

@@ -22,7 +22,7 @@ showpopup()
 *///*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/**/*/**/*/*/*/*/*
 function gameOver(){
     for (var i = 0; i < currentWord.length; i++) {
-        putLetter(currentWord.charAt(i),i+30);   
+        putLetter(currentWord.charAt(i),i+30,true);   
     }
     var waitTime = setTimeout(function(){
         playerObj.score += playerObj.guessedInARow*10;

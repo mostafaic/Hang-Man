@@ -1,6 +1,7 @@
 function levelUp(level){
         var img = document.getElementById('chargingg');
-        img.setAttribute('src','img/ch/0.png')
+        img.setAttribute('src','img/ch/0.png');
+        charlvl = 0;
         if ( level === 2 )
         {
             var ohyeah = new Audio("audio/ohyeah.wav");
