@@ -1,6 +1,6 @@
 window.onload = function()
 {
-	var retry = document.getElementById('retry');
+	var retry = document.getElementsByName('retry');
 	var score = document.getElementById('finalScore');
 	var query = document.location.search;
 	console.log(query);

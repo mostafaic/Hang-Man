@@ -6,7 +6,7 @@
     <script src="js/gameOver.js"></script>
   	</head>
 
-	<body align="center">
+	<body align="center" bgcolor="">
 
      <!-- Test the page -->
 
@@ -17,13 +17,25 @@
         <div id="Gover">
 
      <!-- for the content to show up -->
+    
+
+
+
+
 
 		<font class='fonts'  id='fData' size="7" color="white">123527</font>  
-	    <img src="img/game.png"><br>
+	    <!-- <img src="img/go.gif" > -->
+      <img src="img/go.gif" usemap="#new map"/>
+     
+      <map name="new map">
+         
+       <area shape="rect" coords="187,168,260,193"
+                          href="startGame.html" />
+	    <br>
 	    <font class='fonts' size="6" color="black" id="finalScore"> your score is : </font></div>
 	    </br>
-		<button id="retry"><img src="img/retryb.png" width=150 height=50> </button>
-
+<!-- 		<button id="retry"><img src="img/retryb.png" width=150 height=50> </button>
+ -->
 		</div>   
         
 </body>

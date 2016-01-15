@@ -31,7 +31,7 @@ function hangMe(index){
      context.beginPath();
      context.arc(460,200,50,0,2*Math.PI); //for the head
      context.lineWidth = 3;
-     context.strokeStyle = 'red';
+     context.strokeStyle = 'black';
      context.stroke();
    
      context.beginPath(); 
@@ -45,7 +45,7 @@ function hangMe(index){
      context.beginPath();
      context.arc(458,235,12,0,2*Math.PI); //for the mouth
      context.stroke();
-     context.fillStyle='red';
+     context.fillStyle='black';
 
      }else if(index ==6){  
 
