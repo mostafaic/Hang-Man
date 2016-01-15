@@ -28,7 +28,7 @@ function levelUp(level){
             var waitTime = setTimeout(function(){
             document.location = 'gratz.html?'+playerObj.score;
                
-             },7000);
+             },2000);
 }
 
         }
