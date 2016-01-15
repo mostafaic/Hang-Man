@@ -28,7 +28,7 @@ function won()
 			charge();
 			playerObj.usedHint = false;
 		}
-	},3000);
+	},2000);
 	score.textContent = playerObj.score;
 	
 	

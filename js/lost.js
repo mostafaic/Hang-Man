@@ -43,7 +43,7 @@ function gameOver(){
             'noHint':false
             }
         }       
-    },5000);
+    },3000);
 }
 /*function restartGame()
 {
