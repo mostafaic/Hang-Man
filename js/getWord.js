@@ -6,6 +6,7 @@ function getWord(){
 	//create table and set id 
 	var word = document.createElement('table');
 	word.setAttribute('id','wordId');
+	word.setAttribute('align','center');
 	//initialize variables of the table and the data inside it 
 	var row;
 	var data,data1;
@@ -18,7 +19,7 @@ function getWord(){
 					 {'word':'milk','desc':'Dairy Drink','hint':''},{'word':'head','desc':'Body Important Part','hint':''},
 					 {'word':'bird','desc':'have wings','hint':''},{'word':'ocean','desc':'bigger than sea','hint':''},
 					 {'word':'milk','desc':'something drunk on the morning','hint':''},{'word':'mimic','desc':'to imitate someone','hint':''},
-					 {'word':'corn','desc':'Cinema favorite habit','hint':''},{'word':'sponge','desc':'Used to clean things','hint':''},
+					 {'word':'popcorn','desc':'Cinema favorite habit','hint':''},{'word':'sponge','desc':'Used to clean things','hint':''},
 					 {'word':'ship','desc':'sail on the sea','hint':''},{'word':'adult','desc':'grown up','hint':''},
 					 {'word':'meat','desc':'buy from the butcher','hint':''},{'word':'dread','desc':'Horribaly bad','hint':''},
 					 {'word':'crumble','desc':'Fail apart','hint':''}];
@@ -63,24 +64,26 @@ function getWord(){
 								for (var i = 0; i < currentWord.length; i++) {
 									data=document.createElement('td');
 									letter=document.createElement('p');
-									letter.innerHTML="__";
-									letter.style.background = "#0066ff";
-									letter.style.color= "#33ccff";
+									letter.innerHTML="_";
+									//letter.style.background = "#0066ff";
+									letter.style.color= "black";
+									letter.style.fontSize="25px";
 									letter.id = letterIndex+i;
 									data.appendChild(letter);		
 									row.appendChild(data);	
 								}
-								data1=document.createElement('td');
+								//data1=document.createElement('td');
 								description=document.createElement('p');
 								//style for description//////
 								description.style.width = '100%';
 								description.style.height = '100%';
-								description.style.color = "##6600ff";
+								description.style.color = "black";
 								description.style.fontSize  = "35px";
-								description.style.background = "#0066ff";					
-								
-								description.style.border = "1px solid #000"
-								
+								description.style.fontFamily = "cooper black";
+								//description.style.background = "#0066ff";					
+								//description.style.border = "2px solid black";
+								description.marginLeft="200px";
+								/*
 								description.style.borderWidth = "1px";
 								description.style.borderColor = "#000";
 								description.style.borderStyle = "solid";
@@ -89,12 +92,13 @@ function getWord(){
 								description.style.borderTopWidth = "4px";
 								description.style.borderTopColor = "#8080ff";
 								description.style.borderTopStyle = "dashed";
-								
+								*/
 								description.innerHTML=lvl1Words[randomIndex].desc;
-								data1.appendChild(description);
-								row.appendChild(data1);
-								
+								//data1.appendChild(description);
+								//row2.appendChild(data1);
+								//word.appendChild(row2);
 								word.appendChild(row);
+								divId.appendChild(description);
 								divId.appendChild(word);
 						}else{
 						}
@@ -117,24 +121,26 @@ function getWord(){
 								for (var i = 0; i < currentWord.length; i++) {
 									data=document.createElement('td');
 									letter=document.createElement('p');
-									letter.innerHTML="__";
-									letter.style.background = "#0066ff";
-									letter.style.color= "#33ccff";
+									letter.innerHTML="_";
+									//letter.style.background = "#0066ff";
+									letter.style.color= "black";
+									letter.style.fontSize="25px";
 									letter.id = letterIndex+i;
-									data.appendChild(letter);		
-									row.appendChild(data);	
+									data.appendChild(letter);
+									row.appendChild(data);
 								}
-								data1=document.createElement('td');
+								//data1=document.createElement('td');
 								description=document.createElement('p');
 								//style for description//////
 								description.style.width = '100%';
 								description.style.height = '100%';
-								description.style.color = "##6600ff";
+								description.style.color = "black";
 								description.style.fontSize  = "35px";
-								description.style.background = "#0066ff";					
-								
-								description.style.border = "1px solid #000"
-								
+								description.style.fontFamily = "cooper black";
+								//description.style.background = "#0066ff";					
+								//description.style.border = "2px solid black";
+								description.marginLeft="200px";
+								/*
 								description.style.borderWidth = "1px";
 								description.style.borderColor = "#000";
 								description.style.borderStyle = "solid";
@@ -143,11 +149,14 @@ function getWord(){
 								description.style.borderTopWidth = "4px";
 								description.style.borderTopColor = "#8080ff";
 								description.style.borderTopStyle = "dashed";
-								
+								*/
 								description.innerHTML=lvl2Words[randomIndex].desc;
-								data1.appendChild(description);
-								row.appendChild(data1);
-								
+								//data1.appendChild(description);
+								//row2.appendChild(data1);
+								//word.appendChild(row2);
+								word.appendChild(row);
+								divId.appendChild(description);
+								divId.appendChild(word);								
 								word.appendChild(row);
 								divId.appendChild(word);	
 						}else{
@@ -168,24 +177,26 @@ function getWord(){
 								for (var i = 0; i < currentWord.length; i++) {
 									data=document.createElement('td');
 									letter=document.createElement('p');
-									letter.innerHTML="__";
-									letter.style.background = "#0066ff";
-									letter.style.color= "#33ccff";
+									letter.innerHTML="_";
+									//letter.style.background = "#0066ff";
+									letter.style.color= "black";
+									letter.style.fontSize="25px";
 									letter.id = letterIndex+i;
 									data.appendChild(letter);		
 									row.appendChild(data);	
 								}
-								data1=document.createElement('td');
+								//data1=document.createElement('td');
 								description=document.createElement('p');
 								//style for description//////
 								description.style.width = '100%';
 								description.style.height = '100%';
-								description.style.color = "##6600ff";
+								description.style.color = "black";
 								description.style.fontSize  = "35px";
-								description.style.background = "#0066ff";					
-								
-								description.style.border = "1px solid #000"
-								
+								description.style.fontFamily = "cooper black";
+								//description.style.background = "#0066ff";					
+								//description.style.border = "2px solid black";
+								description.marginLeft="200px";
+								/*
 								description.style.borderWidth = "1px";
 								description.style.borderColor = "#000";
 								description.style.borderStyle = "solid";
@@ -194,12 +205,13 @@ function getWord(){
 								description.style.borderTopWidth = "4px";
 								description.style.borderTopColor = "#8080ff";
 								description.style.borderTopStyle = "dashed";
-								
+								*/
 								description.innerHTML=lvl2Words[randomIndex].desc;
-								data1.appendChild(description);
-								row.appendChild(data1);
-								
+								//data1.appendChild(description);
+								//row2.appendChild(data1);
+								//word.appendChild(row2);
 								word.appendChild(row);
+								divId.appendChild(description);
 								divId.appendChild(word);	
 						}else{
 						}
@@ -224,24 +236,26 @@ else if(playerObj.lvl==3){
 								for (var i = 0; i < currentWord.length; i++) {
 									data=document.createElement('td');
 									letter=document.createElement('p');
-									letter.innerHTML="__";
-									letter.style.background = "#0066ff";
-									letter.style.color= "#33ccff";
+									letter.innerHTML="_";
+									//letter.style.background = "#0066ff";
+									letter.style.color= "black";
+									letter.style.fontSize="25px";
 									letter.id = letterIndex+i;
 									data.appendChild(letter);		
 									row.appendChild(data);	
 								}
-								data1=document.createElement('td');
+								//data1=document.createElement('td');
 								description=document.createElement('p');
 								//style for description//////
 								description.style.width = '100%';
 								description.style.height = '100%';
-								description.style.color = "##6600ff";
+								description.style.color = "black";
 								description.style.fontSize  = "35px";
-								description.style.background = "#0066ff";					
-								
-								description.style.border = "1px solid #000"
-								
+								description.style.fontFamily = "cooper black";
+								//description.style.background = "#0066ff";					
+								//description.style.border = "2px solid black";
+								description.marginLeft="200px";
+								/*
 								description.style.borderWidth = "1px";
 								description.style.borderColor = "#000";
 								description.style.borderStyle = "solid";
@@ -250,14 +264,15 @@ else if(playerObj.lvl==3){
 								description.style.borderTopWidth = "4px";
 								description.style.borderTopColor = "#8080ff";
 								description.style.borderTopStyle = "dashed";
-								
+								*/
 								description.innerHTML=lvl3Words[randomIndex].desc;
-								data1.appendChild(description);
-								row.appendChild(data1);
-								
+								//data1.appendChild(description);
+								//row2.appendChild(data1);
+								//word.appendChild(row2);
 								word.appendChild(row);
-								divId.appendChild(word);
-						}else{
+								divId.appendChild(description);
+								divId.appendChild(word);						
+							}else{
 						}
 					
 				}while(found!=1)
@@ -274,24 +289,26 @@ else if(playerObj.lvl==3){
 								for (var i = 0; i < currentWord.length; i++) {
 									data=document.createElement('td');
 									letter=document.createElement('p');
-									letter.innerHTML="__";
-									letter.style.background = "#0066ff";
-									letter.style.color= "#33ccff";
+									letter.innerHTML="_";
+									//letter.style.background = "#0066ff";
+									letter.style.color= "black";
+									letter.style.fontSize="25px";
 									letter.id = letterIndex+i;
 									data.appendChild(letter);		
 									row.appendChild(data);	
 								}
-								data1=document.createElement('td');
+								//data1=document.createElement('td');
 								description=document.createElement('p');
 								//style for description//////
 								description.style.width = '100%';
 								description.style.height = '100%';
-								description.style.color = "##6600ff";
+								description.style.color = "black";
 								description.style.fontSize  = "35px";
-								description.style.background = "#0066ff";					
-								
-								description.style.border = "1px solid #000"
-								
+								description.style.fontFamily = "cooper black";
+								//description.style.background = "#0066ff";					
+								//description.style.border = "2px solid black";
+								description.marginLeft="200px";
+								/*
 								description.style.borderWidth = "1px";
 								description.style.borderColor = "#000";
 								description.style.borderStyle = "solid";
@@ -300,12 +317,13 @@ else if(playerObj.lvl==3){
 								description.style.borderTopWidth = "4px";
 								description.style.borderTopColor = "#8080ff";
 								description.style.borderTopStyle = "dashed";
-								
+								*/
 								description.innerHTML=lvl3Words[randomIndex].desc;
-								data1.appendChild(description);
-								row.appendChild(data1);
-								
+								//data1.appendChild(description);
+								//row2.appendChild(data1);
+								//word.appendChild(row2);
 								word.appendChild(row);
+								divId.appendChild(description);
 								divId.appendChild(word);
 						}else{
 						}

@@ -7,21 +7,28 @@ function won()
 	if (letterGuessed == currentWord.length)
 	{
 		playerObj.badges.proGuesser = true;
-		letterGuessed = 0;
 		drawBadges();
 	}
-	if (wordsCounter == 9)
-	{
-		playerObj.lvl++;
-		wordsCounter = 0;	
-		gameReset(2);
+	if (!playerObj.usedHint){
+		playerObj.badges.noHint = true;
+		drawBadges();
 	}
-	else
-	{	
-		wordsCounter++;
-		gameReset(1); 
-		charge();
-	}
+	var waitTime = setTimeout(function(){
+		if (wordsCounter == 10)
+		{
+			playerObj.lvl++;
+			wordsCounter = 0;	
+			gameReset(2);
+			playerObj.usedHint = false;
+		}
+		else
+		{	
+			wordsCounter++;
+			gameReset(1); 
+			charge();
+			playerObj.usedHint = false;
+		}
+	},3000);
 	score.textContent = playerObj.score;
 	
 	

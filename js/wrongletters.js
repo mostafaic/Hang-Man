@@ -13,14 +13,24 @@ var list = document.createElement('ul');
 list.setAttribute('id','list');
 divOfWrongLetter.appendChild(list);
 var li = document.createElement('li');
+	//var font = document.createElement('font');
+	li.style.fontFamily="cooper black";
+	li.style.fontSize="25px";
+	li.style.color="black";
+	li.setAttribute('type','none');
 	li.textContent=letter;
 	list.appendChild(li);
+	//li.appendChild(font);
 	wrongArray.push(letter);
 	hangMe(wrongArray.length);
 }else{
 var list = document.getElementById('list');
 if(wrongArray.length!=10){
 	var li = document.createElement('li');
+	li.style.fontFamily="cooper black";
+	li.style.fontSize="25px";
+	li.style.color="black";
+	li.setAttribute('type','none');
 	li.textContent=letter;
 	list.appendChild(li);
 	wrongArray.push(letter);

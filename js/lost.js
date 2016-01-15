@@ -21,24 +21,28 @@ showpopup()
 }// for the whole
 *///*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/**/*/**/*/*/*/*/*
 function gameOver(){
-    playerObj.score += playerObj.guessedInARow*10;
-	document.location = 'gameOver.html?'+playerObj.score;
-    playerObj = 
-    {
-        'name':null,
-        'gender':null,
-        'score':0,
-        'guessedInARow':0,
-        'lvl':1,
-        'badges':{
+    for (var i = 0; i < currentWord.length; i++) {
+        putLetter(currentWord.charAt(i),i+30,true);   
+    }
+    var waitTime = setTimeout(function(){
+        playerObj.score += playerObj.guessedInARow*10;
+        document.location = 'gameOver.html?'+playerObj.score;
+        playerObj = 
+        {
+            'name':null,
+            'gender':null,
+            'score':0,
+            'guessedInARow':0,
+            'lvl':1,
+            'badges':{
             'lvl_1':false,
             'lvl_2':false,
             'lvl_3':false,
             'proGuesser':false,
             'noHint':false
-        }
-    }
-
+            }
+        }       
+    },5000);
 }
 /*function restartGame()
 {

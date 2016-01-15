@@ -11,6 +11,7 @@ document.body.innerHTML = '';
  playerName.textContent = playerObj.name;
  playerName.style.fontSize = "40px";
  playerName.style.marginLeft = "150px";
+ playerName.style.fontFamily="cooper black";
  playerInfo.appendChild(playerName);
 //---------------------------------------------------------------
  /*
@@ -34,10 +35,12 @@ var scoreLabel = document.createElement('label');
  scoreLabel.textContent="Score : ";
  scoreLabel.style.fontSize = "40px";
  scoreLabel.style.marginLeft = "50px";
+ scoreLabel.style.fontFamily="cooper black";
  playerInfo.appendChild(scoreLabel);
 var score = document.createElement('label');
  score.setAttribute('id','score'); //ayad	
  score.textContent=playerObj.score;
+ score.style.fontFamily="cooper black";
  score.style.fontSize = "40px";
  playerInfo.appendChild(score);
 //----------------------------------------------------------------
@@ -138,10 +141,21 @@ var guessedWord = document.createElement('div');
  //guessedWord.style.border = '1px solid black';
  guessedWord.style.width = '30%';
  guessedWord.style.height = '10%';
- guessedWord.style.marginLeft = '600px';
+ guessedWord.style.marginLeft = '500px';
  guessedWord.style.marginTop = '-10px';
 /////////////////////////////////////////////////////////////////
-	//call drawLetters and getWord functions ***By Sobhy***////
+	//Hint Button 
+	var hintBtn=document.createElement('button');
+	hintBtn.setAttribute('id','hintBtn');
+	hintBtn.textContent="Hint";
+	hintBtn.style.width = '10%';
+	hintBtn.style.height = '10%';
+	hintBtn.style.color = "#33ccff";
+	hintBtn.style.fontSize  = "40px";
+	hintBtn.style.fontFamily="cooper black";
+	hintBtn.style.marginLeft="-350px";
+	hintBtn.setAttribute('align','center');
+	document.body.appendChild(hintBtn);
 	drawLetters();
 	getWord();
 }

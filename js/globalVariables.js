@@ -4,6 +4,7 @@ var playerObj = {
 	'score':0,
 	'guessedInARow':0,
 	'lvl':1,
+	'usedHint':false,
 	'badges':{
 		'lvl_1':false,
 		'lvl_2':false,
