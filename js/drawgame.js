@@ -138,7 +138,7 @@ var guessedWord = document.createElement('div');
  //guessedWord.style.border = '1px solid black';
  guessedWord.style.width = '30%';
  guessedWord.style.height = '10%';
- guessedWord.style.marginLeft = '600px';
+ guessedWord.style.marginLeft = '500px';
  guessedWord.style.marginTop = '-10px';
 /////////////////////////////////////////////////////////////////
 	//call drawLetters and getWord functions ***By Sobhy***////
